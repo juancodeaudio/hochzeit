@@ -1,9 +1,9 @@
-import styles from "./page.module.css";
+import { Hero } from "app/components/home/Hero";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <h1>Camila & Juan Pablo</h1>
-    </div>
+    <main>
+      <Hero />
+    </main>
   );
 }
