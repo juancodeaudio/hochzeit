@@ -1,7 +1,7 @@
 export default function Faq() {
   return (
-    <div>
+    <main>
       <h1>Preguntas y respuestas</h1>
-    </div>
+    </main>
   );
 }
