@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  sassOptions: {
+    additionalData: `@use "app/sass/abstracts/variables";`,
+  },
 };
 
 export default nextConfig;
