@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { motion } from "motion/react";
 import { NavbarButton } from "./NavbarButton";
@@ -35,16 +36,19 @@ export const Navbar = () => {
           />
         )}
         {hoveredOption && (
-          <div className={styles["navbar__image-container"]}>
-            <motion.img 
-              src={hoveredOption} 
+          <motion.div
+            className={styles["navbar__image-container"]}
+            initial={{ opacity: 0, y: -20, scale: 0.8, rotate: 0 }} 
+            animate={{ opacity: 1, y: 0, scale: 1, rotate: randomRotation }} 
+            transition={{ duration: 0.5 }} 
+          >
+            <Image
+              src={hoveredOption}
               alt={`Image for ${hoveredOption}`}
               className={styles["navbar__image"]}
-              initial={{ opacity: 0, y: -20, scale: 0.8, rotate: 0 }} 
-              animate={{ opacity: 1, y: 0, scale: 1, rotate: randomRotation }} 
-              transition={{ duration: 0.5 }} 
+              fill
             />
-          </div>
+          </motion.div>
         )}
       </div>
     </motion.nav>

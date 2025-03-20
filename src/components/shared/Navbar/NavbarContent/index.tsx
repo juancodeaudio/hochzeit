@@ -3,11 +3,11 @@ import { motion } from "motion/react";
 import styles from "./NavbarContent.module.scss";
 
 const navLinks = [
-  { href: "/", label: "Home", image: "images/IMG_1704.jpeg" },
-  { href: "/story", label: "Historia", image: "images/IMG_1338.jpeg" },
-  { href: "/gallery", label: "Galeria", image: "images/IMG_2098.jpeg" },
-  { href: "/party", label: "Sobre la fiesta", image: "images/IMG_1704.jpeg" },
-  { href: "/faq", label: "FAQ", image: "images/IMG_2098.jpeg" },
+  { href: "/", label: "Home", image: "/images/IMG_1704.jpeg" },
+  { href: "/story", label: "Historia", image: "/images/IMG_1338.jpeg" },
+  { href: "/gallery", label: "Galeria", image: "/images/IMG_2098.jpeg" },
+  { href: "/party", label: "Sobre la fiesta", image: "/images/IMG_1704.jpeg" },
+  { href: "/faq", label: "FAQ", image: "/images/IMG_2098.jpeg" },
 ];
 
 type NavbarContentProps = {
