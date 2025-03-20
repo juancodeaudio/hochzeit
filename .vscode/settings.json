@@ -1,8 +1,14 @@
 {
   "conventionalCommits.scopes": [
+    "VSCode",
+    "Styles",
     "Navbar",
     "Header",
-    "VSCode",
-    "Styles"
+    "Footer",
+    "Home",
+    "Story",
+    "Gallery",
+    "Party",
+    "FAQ"
   ]
 }
