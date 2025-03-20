@@ -8,8 +8,11 @@ import styles from "./Navbar.module.scss";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [hoveredOption, setHoveredOption] = useState("");
+  const [randomRotation, setRandomRotation] = useState(0);
 
   const toggleNavbar = () => {
+    setHoveredOption("");
     setIsOpen(!isOpen);
   };
 
@@ -23,9 +26,27 @@ export const Navbar = () => {
       transition={{ duration: 0.8, ease: [0.645, 0.045, 0.355, 1] }}
     >
       <NavbarButton isOpen={isOpen} toggleNavbar={toggleNavbar} />
-      {isOpen && (
-        <NavbarContent toggleNavbar={toggleNavbar} />
-      )}
+      <div className={styles["navbar__container"]}>
+        {isOpen && (
+          <NavbarContent
+            toggleNavbar={toggleNavbar} 
+            setHoveredOption={setHoveredOption}
+            setRandomRotation={setRandomRotation}
+          />
+        )}
+        {hoveredOption && (
+          <div className={styles["navbar__image-container"]}>
+            <motion.img 
+              src={hoveredOption} 
+              alt={`Image for ${hoveredOption}`}
+              className={styles["navbar__image"]}
+              initial={{ opacity: 0, y: -20, scale: 0.8, rotate: 0 }} 
+              animate={{ opacity: 1, y: 0, scale: 1, rotate: randomRotation }} 
+              transition={{ duration: 0.5 }} 
+            />
+          </div>
+        )}
+      </div>
     </motion.nav>
   );
-}
+};
