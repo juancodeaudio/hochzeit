@@ -1,6 +1,8 @@
 {
   "conventionalCommits.scopes": [
     "Navbar",
-    "Header"
+    "Header",
+    "VSCode",
+    "Styles"
   ]
 }
