@@ -31,7 +31,7 @@ export const Header = () => {
         initial="initial"
         animate={pathname === "/" ? (isScrolled ? "scrolled" : "initial") : "scrolled"}
         variants={variants}
-        transition={{ duration: 0.6, ease: [0.25, 1, 0.5, 1] }}
+        transition={{ duration: 0.6, ease: [0.645, 0.045, 0.355, 1] }}
       />
     </motion.header>
   );
