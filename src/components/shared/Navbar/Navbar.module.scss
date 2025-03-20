@@ -13,4 +13,20 @@
   z-index: 100;
   overflow: hidden;
 
+  &__container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+  }
+
+  &__image {
+    pointer-events: none;
+    aspect-ratio: 6/4;
+    width: 40vw;
+    object-fit: cover;
+    border: 10px solid #e0e0e0;
+    border-bottom-width: 40px;
+    border-radius: 4px;
+  }
 }
