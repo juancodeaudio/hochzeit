@@ -1,11 +1,10 @@
+import { GalleryParallax } from "app/components/gallery/GalleryParallax";
 import { GalleryScroll } from "app/components/gallery/GalleryScroll";
 
 export default function Gallery() {
   return (
     <main>
-      <div style={{ height: "80vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
-        <h1>Galeria</h1>
-      </div>
+      <GalleryParallax />
       <GalleryScroll />
     </main>
   );

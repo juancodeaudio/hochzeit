@@ -1,0 +1,1 @@
+export { GalleryParallax } from "./GalleryParallax";

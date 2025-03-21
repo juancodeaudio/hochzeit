@@ -3,7 +3,7 @@
 import styles from "./GalleryScroll.module.scss";
 
 import Image from "next/image";
-import { useScroll, useTransform, motion } from "framer-motion";
+import { useScroll, useTransform, motion } from "motion/react";
 import { useRef } from "react";
 
 export const GalleryScroll = () => {
