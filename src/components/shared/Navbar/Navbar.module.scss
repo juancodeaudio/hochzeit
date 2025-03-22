@@ -23,9 +23,11 @@
   }
 
   &__image-container {
+    position: relative;
     pointer-events: none;
     aspect-ratio: 6/4;
     width: 600px;
+    height: auto;
     border: 10px solid #e0e0e0;
     border-bottom-width: 40px;
     border-radius: 4px;
