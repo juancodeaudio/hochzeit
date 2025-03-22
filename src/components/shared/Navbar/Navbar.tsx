@@ -5,15 +5,17 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { NavbarButton } from "./NavbarButton";
 import { NavbarContent } from "./NavbarContent";
+import { navLinks } from "app/constants/config";
+
 import styles from "./Navbar.module.scss";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [hoveredOption, setHoveredOption] = useState("");
+  const [hoveredOption, setHoveredOption] = useState<null | typeof navLinks[0]>(null);
   const [randomRotation, setRandomRotation] = useState(0);
 
   const toggleNavbar = () => {
-    setHoveredOption("");
+    setHoveredOption(null);
     setIsOpen(!isOpen);
   };
 
@@ -37,14 +39,14 @@ export const Navbar = () => {
         )}
         {hoveredOption && (
           <motion.div
-            className={styles["navbar__image-container"]}
+            className={`${styles["navbar__image-container"]} ${hoveredOption.isVertical ? styles["navbar__image-container--vertical"] : ""}`}
             initial={{ opacity: 0, y: -20, scale: 0.8, rotate: 0 }} 
             animate={{ opacity: 1, y: 0, scale: 1, rotate: randomRotation }} 
             transition={{ duration: 0.5 }} 
           >
             <Image
-              src={hoveredOption}
-              alt={`Image for ${hoveredOption}`}
+              src={hoveredOption.image}
+              alt={`Image for ${hoveredOption.label}`}
               className={styles["navbar__image"]}
               fill
             />

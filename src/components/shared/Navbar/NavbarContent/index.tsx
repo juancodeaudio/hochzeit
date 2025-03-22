@@ -1,18 +1,11 @@
 import Link from "next/link";
 import { motion } from "motion/react";
+import { navLinks } from "app/constants/config";
 import styles from "./NavbarContent.module.scss";
-
-const navLinks = [
-  { href: "/", label: "Home", image: "/images/IMG_1704.jpeg" },
-  { href: "/story", label: "Historia", image: "/images/IMG_1338.jpeg" },
-  { href: "/gallery", label: "Galeria", image: "/images/IMG_2098.jpeg" },
-  { href: "/party", label: "Sobre la fiesta", image: "/images/IMG_1704.jpeg" },
-  { href: "/faq", label: "FAQ", image: "/images/IMG_2098.jpeg" },
-];
 
 type NavbarContentProps = {
   toggleNavbar: () => void;
-  setHoveredOption: (option: string) => void;
+  setHoveredOption: (option: typeof navLinks[0] | null) => void;
   setRandomRotation: (rotation: number) => void;
 };
 
@@ -33,10 +26,10 @@ export const NavbarContent = ({ toggleNavbar, setHoveredOption, setRandomRotatio
     show: { x: "0%" }
   }
 
-  const handleLinkHover = (image: string) => {
-    const randomNumber = Math.floor(Math.random() * 17) -8;
+  const handleLinkHover = (link: typeof navLinks[0]) => {
+    const randomNumber = Math.floor(Math.random() * 17) - 8;
     setRandomRotation(randomNumber);
-    setHoveredOption(image);
+    setHoveredOption(link);
   };
 
   return (
@@ -52,8 +45,8 @@ export const NavbarContent = ({ toggleNavbar, setHoveredOption, setRandomRotatio
           key={link.href} 
           variants={item} 
           transition={{ duration: 1, ease: [0.645, 0.045, 0.355, 1] }}
-          onMouseEnter={() => handleLinkHover(link.image)}
-          onMouseLeave={() => setHoveredOption("")}
+          onMouseEnter={() => handleLinkHover(link)}
+          onMouseLeave={() => setHoveredOption(null)}
         >
           <Link
             className={styles["navbar__link"]}
