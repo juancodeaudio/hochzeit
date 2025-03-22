@@ -1,0 +1,20 @@
+{
+  "Home": {
+    "Hero": {
+      "title": "Camila y Juan Pablo"
+    }
+  },
+  "Story": {
+    "title": "Nuestra Historia",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies."
+  },
+  "Gallery": {
+    "title": "Galería"
+  },
+  "Party": {
+    "title": "Sobre la Fiesta"
+  },
+  "FAQ": {
+    "title": "Preguntas Frecuentes"
+  }
+}

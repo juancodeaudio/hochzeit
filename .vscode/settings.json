@@ -2,6 +2,7 @@
   "conventionalCommits.scopes": [
     "VSCode",
     "Styles",
+    "Localization",
     "Navbar",
     "Header",
     "Footer",
