@@ -1,4 +1,4 @@
-export default function Faq() {
+export default function QA() {
   return (
     <main>
       <h1>Preguntas y respuestas</h1>

@@ -1,4 +1,11 @@
 {
+  "Navbar": {
+    "Home": "Home",
+    "Story": "Our Story",
+    "Gallery": "Gallery",
+    "Party": "About the Party",
+    "QA": "Q&A"
+  },
   "Home": {
     "Hero": {
       "title": "Camila & Juan Pablo"
@@ -14,7 +21,7 @@
   "Party": {
     "title": "About the Party"
   },
-  "FAQ": {
-    "title": "Frequently Asked Questions"
+  "QA": {
+    "title": "Questions and Answers"
   }
 }
