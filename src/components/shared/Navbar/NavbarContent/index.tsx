@@ -1,5 +1,7 @@
-import Link from "next/link";
+import {useTranslations} from 'next-intl';
+
 import { motion } from "motion/react";
+import { Link } from 'app/i18n/navigation';
 import { navLinks } from "app/constants/config";
 import styles from "./NavbarContent.module.scss";
 
@@ -10,6 +12,7 @@ type NavbarContentProps = {
 };
 
 export const NavbarContent = ({ toggleNavbar, setHoveredOption, setRandomRotation }: NavbarContentProps) => {  
+  const t = useTranslations('Navbar');
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -53,7 +56,7 @@ export const NavbarContent = ({ toggleNavbar, setHoveredOption, setRandomRotatio
             href={link.href}
             onClick={toggleNavbar}
           >
-            {link.label}
+            {t(link.label)}
           </Link>
         </motion.li>
       ))}
