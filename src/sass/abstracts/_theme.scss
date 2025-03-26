@@ -1,0 +1,32 @@
+@use 'variables' as *;
+
+// 🌿 Primary
+$primary: $primary-30; 
+$on-primary: $primary-98; 
+$primary-container: $primary-80;
+$on-primary-container: $primary-10;
+
+// 🍂 Secondary
+$secondary: $secondary-30;  
+$on-secondary: $secondary-98;  
+$secondary-container: $secondary-80;  
+$on-secondary-container: $secondary-10;  
+
+// ✨ Tertiary
+$tertiary: $primary-50;
+$on-tertiary: $primary-90;
+$tertiary-container: $primary-70;
+$on-tertiary-container: $primary-10;
+
+// 🎨 Surface
+$surface: $neutral-98;
+$surface-container: $neutral-95;
+$on-surface: $neutral-10;
+$inverse-surface: $neutral-20;
+$inverse-on-surface: $neutral-95;
+
+// 🚦 System Colors
+$error: #8B2E2E;
+$on-error: #FFFFFF;
+$warning: #C77E29;
+$success: #3D6E32;

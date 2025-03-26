@@ -1,3 +1,8 @@
+@use '../abstracts/theme' as *;
+
+body {
+  background-color: $surface;
+}
 main {
   margin-left: 5vw;
 }

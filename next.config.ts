@@ -3,7 +3,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const nextConfig: NextConfig = {
   sassOptions: {
-    additionalData: `@use "app/sass/abstracts/variables";`,
+    additionalData: `@use "app/sass/abstracts" as *;`,
   },
 };
  

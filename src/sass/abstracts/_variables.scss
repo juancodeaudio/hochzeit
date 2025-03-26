@@ -1,9 +1,50 @@
-// Color palette
-$color-primary: #e4e1f6;
-$color-secondary: #13111a;
+// ================ COLOR PALETTE ================
+// 🌿 Primary Tonal Palette
+$primary-0: #0D0301;
+$primary-10: #401107; //Black Bean
+$primary-20: #5A1F07;
+$primary-30: #702609; // Seal Brown
+$primary-40: #8B2E2E;  
+$primary-50: #A67C68;  
+$primary-60: #B88672; //Beaver
+$primary-70: #C49D8B;
+$primary-80: #D7B6A1;
+$primary-90: #EADCD6; // Champagne Pink
+$primary-95: #F4EAE5;
+$primary-98: #FFF8F6;
+$primary-100: #FFFFFF;  
 
+// 🍂 Secondary Tonal Palette
+$secondary-0: #1A1D0E;
+$secondary-10: #2B3116;
+$secondary-20: #3D441E; //Dark Moss Green
+$secondary-30: #556136;
+$secondary-40: #6D7C4E;
+$secondary-50: #8A956C;
+$secondary-60: #A5AF88;
+$secondary-70: #C2CAA5;
+$secondary-80: #D9D4C1; // Bone
+$secondary-90: #EDEAE0;
+$secondary-95: #F5F3EC;
+$secondary-98: #FCFBF9;
+$secondary-100: #FFFFFF;
 
-// Typography
+// 🎨 Neutrals & Surface
+$neutral-0: #12100E;
+$neutral-10: #1C1B1B;
+$neutral-20: #313030;
+$neutral-30: #484646;
+$neutral-40: #605E5D;
+$neutral-50: #797676;
+$neutral-60: #93908F;
+$neutral-70: #AEAAAA;
+$neutral-80: #C9C6C5;
+$neutral-90: #E6E1E0;
+$neutral-95: #F4F0EF;
+$neutral-98: #FDF8F7;
+$neutral-100: #FFFFFF;
+
+// ================ TYPOGRAPHY ================
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Open Sans', sans-serif;
 $font-size-base: 1rem;
