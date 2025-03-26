@@ -8,7 +8,23 @@
   },
   "Home": {
     "Hero": {
-      "title": "Camila y Juan Pablo"
+      "title": "Camila & Juan Pablo",
+      "welcome": "Aquí va un hermoso mensaje de bienvenida.",
+      "quote": "Frase especial o cita que nos represente a nosotros y nuestro amor.",
+      "quoteAuthor": "Autor de la cita"
+    },
+    "ParallaxBlock": {},
+    "Details": {
+      "when": "¿Cuándo?",
+      "days": "Días",
+      "hours": "Horas",
+      "minutes": "Minutos",
+      "seconds": "Segundos"
+    },
+    "Timeline": {
+      "title": "Orden del Día",
+      "ceremony": "Ceremonia",
+      "party": "Fiesta"
     }
   },
   "Story": {
