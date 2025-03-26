@@ -19,14 +19,14 @@ export const NavbarButton = ({ isOpen, toggleNavbar }: NavbarButtonProps) => {
       y: "-50%",
       scaleY: 0.7,
       rotate: 0,
-      backgroundColor: "#333",
+      backgroundColor: "#313030",
     }),
     open: (custom: number) => ({
       x: "-50%",
       y: "-50%",
       scaleY: 1,
       rotate: custom === 1 ? 315 : 45,
-      backgroundColor: "#fff",
+      backgroundColor: "#FDF8F7",
     })
   }
 

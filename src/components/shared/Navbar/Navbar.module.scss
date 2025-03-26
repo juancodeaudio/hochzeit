@@ -4,8 +4,8 @@
   left: 0;
   height: 100vh;
   width: 5vw;
-  background-color: #fff;
-  border-right: 1px solid #e0e0e0;
+  background-color: $surface;
+  border-right: 1px solid $surface-container;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,7 +28,7 @@
     aspect-ratio: 6/4;
     width: 600px;
     height: auto;
-    border: 10px solid #e0e0e0;
+    border: 10px solid $surface;
     border-bottom-width: 40px;
     border-radius: 4px;
     &--vertical {

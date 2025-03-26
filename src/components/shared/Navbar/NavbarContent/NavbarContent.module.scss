@@ -18,7 +18,7 @@
   &__link {
     text-decoration: none;
     transition: color 0.3s;
-    color: #fefefe;
+    color: $inverse-on-surface;
 
     &:hover {
       font-weight: bolder;
