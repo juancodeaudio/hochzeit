@@ -93,6 +93,7 @@ export const GalleryParallax = () => {
 const ParallaxImg = ({ className, alt, src, width, start, end }: ParallaxImgProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: [`${start}px end`, `end ${end}px`] });
+  const generateRandomNumber = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1)) + min;
 
   return (
     <motion.div
@@ -101,7 +102,8 @@ const ParallaxImg = ({ className, alt, src, width, start, end }: ParallaxImgProp
       style={{
         opacity: useTransform(scrollYProgress, [0.75, 1], [1, 0]),
         scale: useTransform(scrollYProgress, [0.75, 1], [1, 0.85]),
-        y: useTransform(scrollYProgress, [0, 1], [start, end])
+        y: useTransform(scrollYProgress, [0, 1], [start, end]),
+        rotate: generateRandomNumber(-6, 6)
       }}
     >
       <Image src={src} alt={alt} width={width} height={100} style={{ width, height: 'auto' }} />
