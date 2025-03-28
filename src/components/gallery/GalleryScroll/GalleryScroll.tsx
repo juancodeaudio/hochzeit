@@ -31,22 +31,30 @@ export const GalleryScroll = () => {
   const parallaxUp200 = useTransform(progress2, [0, 1], ["-200px", "0px"]); //UP FAST
   const parallaxUp140 = useTransform(progress2, [0, 1], ["-140px", "0px"]); //UP FAST
 
+  const rotate1 = useTransform(progress2, [0, 1], ["2deg", "0deg"]);
+  const rotate2 = useTransform(progress2, [0, 1], ["-4deg", "0deg"]);
+  const rotate3 = useTransform(progress2, [0, 1], ["4deg", "0deg"]);
+  const rotate4 = useTransform(progress2, [0, 1], ["-5deg", "0deg"]);
+  const rotate5 = useTransform(progress2, [0, 1], ["4deg", "0deg"]);
+  const rotate6 = useTransform(progress2, [0, 1], ["-3deg", "0deg"]);
+  const rotate7 = useTransform(progress2, [0, 1], ["-2deg", "0deg"]);
+
   const pictures = [
-    { src: "/images/IMG_2098.jpeg", scale: scale4, parallax: parallaxUp90 }, //CENTER
-    { src: "/images/IMG_1704.jpeg", scale: scale5, parallax: parallaxUp200 }, //TOP
-    { src: "/images/IMG_1338.jpeg", scale: scale6, parallax: parallaxUp50 }, //VERTICAL
-    { src: "/images/IMG_1704.jpeg", scale: scale5, parallax: parallaxUp140 }, //RIGHT
-    { src: "/images/IMG_1338.jpeg", scale: scale6, parallax: parallaxD100 }, //DOWN
-    { src: "/images/IMG_1704.jpeg", scale: scale8, parallax: parallax0 }, //DOWN LEFT
-    { src: "/images/IMG_1704.jpeg", scale: scale9, parallax: parallax0 } //DOWN RIGHT
+    { src: "/images/IMG_2098.jpeg", scale: scale4, parallax: parallaxUp90, rotate: rotate1 }, //CENTER
+    { src: "/images/IMG_1704.jpeg", scale: scale5, parallax: parallaxUp200, rotate: rotate2 }, //TOP
+    { src: "/images/IMG_1338.jpeg", scale: scale6, parallax: parallaxUp50, rotate: rotate3 }, //VERTICAL
+    { src: "/images/IMG_1704.jpeg", scale: scale5, parallax: parallaxUp140, rotate: rotate4 }, //RIGHT
+    { src: "/images/IMG_1338.jpeg", scale: scale6, parallax: parallaxD100, rotate: rotate5 }, //DOWN
+    { src: "/images/IMG_1704.jpeg", scale: scale8, parallax: parallax0, rotate: rotate6 }, //DOWN LEFT
+    { src: "/images/IMG_1704.jpeg", scale: scale9, parallax: parallax0, rotate: rotate7 } //DOWN RIGHT
   ];
 
   return (
     <section className={styles["gallery-scroll"]} ref={galleryScroll}>
       <div className={styles["gallery-scroll__viewport"]}>
-        {pictures.map(({ src, scale, parallax }, index) => {
+        {pictures.map(({ src, scale, parallax, rotate }, index) => {
           return (
-            <motion.div key={index} style={{ scale, translateY: parallax }} className={styles["gallery-scroll__item"]}>
+            <motion.div key={index} style={{ scale, translateY: parallax, rotate }} className={styles["gallery-scroll__item"]}>
               <div className={styles["gallery-scroll__image-wrapper"]}>
                 <Image src={src} fill alt="image" />
               </div>

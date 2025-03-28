@@ -23,6 +23,7 @@
         height: 25vh;
         img {
           object-fit: cover;
+          filter: saturate(0.6);
         }
       }
 
