@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: antiquewhite;
+    background-color: $surface-container;
   }
   &__date-container {
     grid-area: date;
@@ -32,20 +32,20 @@
     align-items: center;
   }
   &__countdown {
-    background-color: antiquewhite;
+    background-color: $surface-container;
     padding: 2rem;
     padding-top: 3rem;
     border-radius: 1rem;
     // CLOCK CARDS
     --fcc-digit-block-radius: 15px;
-    --fcc-background: black;
-    --fcc-divider-color: grey;
-    --fcc-digit-color: white;
+    --fcc-background: #702609;
+    --fcc-divider-color: #FFF8F6;
+    --fcc-digit-color: #FFF8F6;
     // LABEL
-    --fcc-label-color: black;
+    --fcc-label-color: #221A14;
     // COLON
     --fcc-separator-size: 6px;
-    --fcc-separator-color: black;
+    --fcc-separator-color: #702609;
   }
   h3 {
     font-size: $font-size-lg;
