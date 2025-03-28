@@ -12,13 +12,13 @@
       top: 50%;
       left: 50%;
       font-size: 3rem;
-      color: white;
+      color: $on-surface;
       transform: translate(-50%, -50%);
-      z-index: 2;
+      z-index: 11;
     }
     h3 {
       font-size: 2rem;
-      color: white;
+      color: $on-surface;
       position: absolute;
       top: 90%;
       left: 50%;
@@ -32,6 +32,8 @@
     z-index: -1;
     img {
       object-fit: cover;
+      filter: sepia(100%) grayscale(90%) blur(10px);
+      opacity: 0.4;
     }
   }
   &__quote-container {
@@ -48,6 +50,7 @@
       font-size: 5vw;
       text-transform: uppercase;
       line-height: normal;
+      color: $primary;
     }
 
     p:last-of-type {
@@ -56,6 +59,7 @@
       margin-top: 10px;
       opacity: 0.8;
       align-self: flex-end;
+      color: $primary;
     }
   }
 }

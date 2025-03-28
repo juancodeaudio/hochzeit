@@ -20,7 +20,7 @@ export const Hero = () => {
     <section className={styles["Hero"]}>
       <div className={styles["Hero__main"]}>
         <motion.div className={styles["Hero__img-container"]} style={{y}}>
-          <Image src="/images/IMG_2098.jpeg" fill alt="image"/>
+          <Image src="/images/IMG_1704.jpeg" fill alt="image"/>
         </motion.div>
         <h1>{t('title')}</h1>
         <h3>{t('welcome')}</h3>
