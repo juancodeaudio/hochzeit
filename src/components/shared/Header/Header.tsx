@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useScroll } from "motion/react";
 import { useState, useEffect } from "react";
 import { usePathname } from 'app/i18n/navigation';
@@ -21,7 +22,7 @@ export const Header = () => {
   }, [scrollY]);
 
   const variants = {
-    initial: { scale: 4, x: "calc(-47.5vw + 2rem + 50%)", y: "45vh" },
+    initial: { scale: 6, x: "calc(-47.5vw + 2rem + 50%)", y: "45vh" },
     scrolled: { scale: 1, x: "0", y: "0vh" },
   };
 
@@ -35,6 +36,7 @@ export const Header = () => {
         variants={variants}
         transition={{ duration: 0.6, ease: [0.645, 0.045, 0.355, 1] }}
       >
+        <Image src="/vectors/logo.svg" fill alt="image" />
       </motion.div>
     </motion.header>
   );
