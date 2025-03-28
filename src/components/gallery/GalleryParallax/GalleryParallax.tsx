@@ -3,7 +3,7 @@
 import styles from "./GalleryParallax.module.scss";
 
 import Image from 'next/image';
-import { useRef, useCallback, useMemo } from "react";
+import { useRef, useCallback, useMemo, useState, useEffect } from "react";
 import { motion, useMotionValue, useSpring, useTransform, useScroll } from 'motion/react';
 
 interface ParallaxImgProps {
@@ -93,7 +93,12 @@ export const GalleryParallax = () => {
 const ParallaxImg = ({ className, alt, src, width, start, end }: ParallaxImgProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: [`${start}px end`, `end ${end}px`] });
-  const generateRandomNumber = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1)) + min;
+  const getRandomRotation = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1)) + min;
+  const [rotation, setRotation] = useState(0);
+
+  useEffect(() => {
+    setRotation(getRandomRotation(-6, 6)); // Se ejecuta solo en el cliente
+  }, []);
 
   return (
     <motion.div
@@ -103,7 +108,7 @@ const ParallaxImg = ({ className, alt, src, width, start, end }: ParallaxImgProp
         opacity: useTransform(scrollYProgress, [0.75, 1], [1, 0]),
         scale: useTransform(scrollYProgress, [0.75, 1], [1, 0.85]),
         y: useTransform(scrollYProgress, [0, 1], [start, end]),
-        rotate: generateRandomNumber(-6, 6)
+        rotate: rotation
       }}
     >
       <Image src={src} alt={alt} width={width} height={100} style={{ width, height: 'auto' }} />
