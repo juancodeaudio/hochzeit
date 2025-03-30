@@ -22,13 +22,6 @@
     position: absolute;
     .gallery-parallax__image-container {
       position: absolute;
-      img {
-        filter: saturate(0.6);
-        border: 10px solid $surface;
-        border-bottom-width: 40px;
-        border-radius: 4px;
-        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
-      }
     }
     &:nth-of-type(1) {
       .gallery-parallax__image-container {

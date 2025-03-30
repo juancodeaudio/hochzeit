@@ -7,3 +7,12 @@ body {
 main {
   margin-left: 5vw;
 }
+
+img {
+  object-fit: cover;
+  filter: saturate(0.6);
+  border: 10px solid $surface;
+  border-bottom-width: 40px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}

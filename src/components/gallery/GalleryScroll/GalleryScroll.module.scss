@@ -22,8 +22,8 @@
         width: 25vw;
         height: 25vh;
         img {
-          object-fit: cover;
-          filter: saturate(0.6);
+          box-shadow: none;
+          border: 0;
         }
       }
 

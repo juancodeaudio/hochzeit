@@ -14,10 +14,13 @@
     border: 1px solid gray;
     margin-left: 1rem;
   }
-}
-
-.placeholder {
-  width: 4rem;
-  height: 4rem;
-  transition: width 0.3s ease-out;
+  &__logo {
+    width: 4rem;
+    height: 4rem;
+    transition: width 0.3s ease-out;
+    img {
+      border: none;
+      box-shadow: none;
+    }
+  }
 }

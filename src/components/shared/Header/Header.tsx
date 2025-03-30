@@ -30,7 +30,7 @@ export const Header = () => {
     <motion.header className={styles["header"]}>
       <LocaleSwitcher />
       <motion.div
-        className={styles["placeholder"]}
+        className={styles["header__logo"]}
         initial="initial"
         animate={pathname === "/" ? (isScrolled ? "scrolled" : "initial") : "scrolled"}
         variants={variants}
