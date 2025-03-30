@@ -29,7 +29,18 @@
   },
   "Story": {
     "title": "Nuestra Historia",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies."
+    "Timeline": {
+      "2016": "Contenido del año 2016...",
+      "2017": "Contenido del año 2017...",
+      "2018": "Contenido del año 2018...",
+      "2019": "Contenido del año 2019...",
+      "2020": "Contenido del año 2020...",
+      "2021": "Contenido del año 2021...",
+      "2022": "Contenido del año 2022...",
+      "2023": "Contenido del año 2023...",
+      "2024": "Contenido del año 2024...",
+      "2025": "Contenido del año 2025..."
+    }
   },
   "Gallery": {
     "title": "Galería"
