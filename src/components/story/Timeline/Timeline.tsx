@@ -131,7 +131,7 @@ export const Timeline = () => {
       </div>
 
       <div className={styles["timeline__images-container"]}>
-        {years.map(({ year, image }, index) => (
+        {years.map(({ year, image, isVertical }, index) => (
           <motion.div
             key={year}
             className={styles["timeline-section__image"]}
@@ -146,8 +146,8 @@ export const Timeline = () => {
             <Image 
               src={image} 
               alt={`Imagen del año ${year}`} 
-              width={300} 
-              height={400}
+              width={!isVertical ? 400 : 300} 
+              height={!isVertical ? 300 : 400}
             />
           </motion.div>
         ))}
