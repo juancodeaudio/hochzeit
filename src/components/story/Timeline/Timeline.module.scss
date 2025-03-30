@@ -1,10 +1,10 @@
 .timeline {
   display: grid;
   grid-template-areas:
-    "years-list photos-container"
+    "years-list images-container"
     "years-list content-container";
   grid-template-columns: 120px 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
   height: 90vh;
   margin-top: 10vh;
 
@@ -25,10 +25,19 @@
     font-size: 1.2rem;
   }
 
-  &__photos-container {
-    grid-area: photos-container;
-    width: 100%;
+  &__images-container {
+    grid-area: images-container;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; // Permitir que las imágenes se superpongan
+    overflow-x: hidden;
+
+    .timeline-section__image {
+      position: absolute; // Apilar imágenes una encima de otra
+    }
   }
+  
 
   &__content-container {
     grid-area: content-container;
@@ -46,7 +55,7 @@
   }
   
   &__section {
-    height: 40vh;
+    height: 100%;
     min-width: 100%;
     scroll-snap-align: start;
     padding-right: 20px;

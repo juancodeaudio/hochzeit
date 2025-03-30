@@ -1,8 +1,9 @@
 "use client";
 
 import { useRef, useState, useEffect, useMemo } from 'react';
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { motion, useTransform, MotionValue, animate, useScroll, useSpring } from 'motion/react';
+import Image from 'next/image';
 import styles from './Timeline.module.scss';
 
 interface YearButtonProps {
@@ -23,9 +24,8 @@ function YearButton({ year, index, scrollProgress, onClick, totalYears }: YearBu
       return 0;
     })
   );
-  
   const fontSize = useTransform(progress, [0, 0.5, 1], ['1em', '1.5em', '2em']);
-  const color = useTransform(progress, [0, 0.5, 1],['#93908F', '#A67C68', '#702609']);
+  const color = useTransform(progress, [0, 0.5, 1], ['#93908F', '#A67C68', '#702609']);
 
   return (
     <motion.button
@@ -45,10 +45,10 @@ function YearButton({ year, index, scrollProgress, onClick, totalYears }: YearBu
 export const Timeline = () => {
   const t = useTranslations('Story.Timeline');
   const years = useMemo(() => [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025] as const, []);
-  const [activeYear, setActiveYear] = useState(0);
+  const [activeYear, setActiveYear] = useState<(typeof years)[number]>(years[0]);
   const [isAnimatingOut, setIsAnimatingOut] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
-  
+
   const { scrollXProgress } = useScroll({
     container: scrollContainerRef,
     offset: ["start start", "end end"]
@@ -60,13 +60,15 @@ export const Timeline = () => {
     restDelta: 0.001
   });
 
+  const randomRotations = useMemo(() => years.map(() => (Math.random() * 30 - 15)), [years]);
+
   const scrollToYear = (year: number) => {
     if (activeYear === year || isAnimatingOut) return;
 
     setIsAnimatingOut(true);
 
     setTimeout(() => {
-      setActiveYear(year);
+      setActiveYear(year as (typeof years)[number]);
 
       requestAnimationFrame(() => {
         const container = scrollContainerRef.current;
@@ -126,9 +128,30 @@ export const Timeline = () => {
           />
         ))}
       </div>
-      
-      <div className={styles["timeline__photos-container"]}></div>
-      
+
+      <div className={styles["timeline__images-container"]}>
+        {years.map((year, index) => (
+          <motion.div
+            key={year}
+            className={styles["timeline-section__image"]}
+            initial={{ x: "100%", opacity: 0 }}
+            animate={{
+              x: years.indexOf(activeYear) >= index ? 0 : "100%",
+              opacity: years.indexOf(activeYear) >= index ? 1 : 0,
+              rotate: randomRotations[index]
+            }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <Image 
+              src={`/images/IMG_1338.jpeg`} 
+              alt={`Imagen del año ${year}`} 
+              width={300} 
+              height={400}
+            />
+          </motion.div>
+        ))}
+      </div>
+
       <div 
         ref={scrollContainerRef}
         className={styles["timeline__content-container"]}
@@ -137,12 +160,14 @@ export const Timeline = () => {
           <motion.div 
             key={year} 
             className={styles["timeline__section"]}
-            variants={contentVariants}
-            initial="hidden"
-            animate={activeYear === year && !isAnimatingOut ? "visible" : "hidden"}
-            exit={isAnimatingOut ? "exit" : undefined}
           >
-            <div className={styles["timeline-section__content"]}>
+            <motion.div
+              className={styles["timeline-section__content"]}
+              variants={contentVariants}
+              initial="hidden"
+              animate={activeYear === year && !isAnimatingOut ? "visible" : "hidden"}
+              exit={isAnimatingOut ? "exit" : undefined}
+            >
               <motion.h2
                 initial={{ y: 20 }}
                 animate={{ y: 0 }}
@@ -158,7 +183,7 @@ export const Timeline = () => {
               >
                 {t(year.toString())}
               </motion.div>
-            </div>
+            </motion.div>
           </motion.div>
         ))}
       </div>
