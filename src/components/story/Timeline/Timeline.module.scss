@@ -5,8 +5,8 @@
     "years-list content-container";
   grid-template-columns: 120px 1fr;
   grid-template-rows: 2fr 1fr;
-  height: 90vh;
-  margin-top: 10vh;
+  height: 98vh;
+  margin-top: 2vh;
 
   &__years-list {
     grid-area: years-list;
@@ -63,16 +63,25 @@
       height: 100%;
       padding: 20px;
       background-color: $primary;
-      border-radius: 30 30 30 30;
+      border-radius: 30px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
       
       h2 {
+        position: absolute;
+        top: 50%;
+        left: 0;
         color: $on-primary;
-        font-size: 2rem;
-        margin-bottom: 20px;
+        opacity: 0.15;
+        font-size: 14rem;
+        margin: 0;
       }
       .content {
-        margin-top: 20px;
+        position: relative;
         color: $on-primary;
+        z-index: 1;
       }
     }
   }

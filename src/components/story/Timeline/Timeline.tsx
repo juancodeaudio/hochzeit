@@ -170,8 +170,8 @@ export const Timeline = () => {
               exit={isAnimatingOut ? "exit" : undefined}
             >
               <motion.h2
-                initial={{ y: 20 }}
-                animate={{ y: 0 }}
+                initial={{ y: "-10%" }}
+                animate={{ y: "-50%" }}
                 transition={{ delay: 0.1 }}
               >
                 {year}
