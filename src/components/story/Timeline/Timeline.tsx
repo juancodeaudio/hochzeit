@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import { motion, useTransform, MotionValue, animate, useScroll, useSpring } from 'motion/react';
 import Image from 'next/image';
 import styles from './Timeline.module.scss';
+import { timelineYears } from 'app/constants/config';
 
 interface YearButtonProps {
   year: number;
@@ -44,8 +45,8 @@ function YearButton({ year, index, scrollProgress, onClick, totalYears }: YearBu
 
 export const Timeline = () => {
   const t = useTranslations('Story.Timeline');
-  const years = useMemo(() => [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025] as const, []);
-  const [activeYear, setActiveYear] = useState<(typeof years)[number]>(years[0]);
+  const years = useMemo(() => timelineYears, []);
+  const [activeYear, setActiveYear] = useState<(typeof years)[number]['year']>(years[0].year);
   const [isAnimatingOut, setIsAnimatingOut] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
@@ -68,12 +69,12 @@ export const Timeline = () => {
     setIsAnimatingOut(true);
 
     setTimeout(() => {
-      setActiveYear(year as (typeof years)[number]);
+      setActiveYear(year as (typeof years)[number]['year']);
 
       requestAnimationFrame(() => {
         const container = scrollContainerRef.current;
         if (container) {
-          const index = years.findIndex(item => item === year);
+          const index = years.findIndex(item => item.year === year);
           const targetScroll = index * container.offsetWidth;
 
           animate(container.scrollLeft, targetScroll, {
@@ -98,7 +99,7 @@ export const Timeline = () => {
   useEffect(() => {
     const unsubscribe = scrollXProgress.on("change", (latest) => {
       const index = Math.round(latest * (years.length - 1));
-      setActiveYear(years[index]);
+      setActiveYear(years[index].year);
     });
 
     return () => unsubscribe();
@@ -117,11 +118,11 @@ export const Timeline = () => {
       animate={{ opacity: 1 }}
     >
       <div className={styles["timeline__years-list"]}>
-        {years.map((year) => (
+        {years.map(({ year }) => (
           <YearButton
             key={year}
             year={year}
-            index={years.indexOf(year)}
+            index={years.findIndex(y => y.year === year)}
             scrollProgress={smoothProgress}
             onClick={() => scrollToYear(year)}
             totalYears={years.length}
@@ -130,20 +131,20 @@ export const Timeline = () => {
       </div>
 
       <div className={styles["timeline__images-container"]}>
-        {years.map((year, index) => (
+        {years.map(({ year, image }, index) => (
           <motion.div
             key={year}
             className={styles["timeline-section__image"]}
             initial={{ x: "100%", opacity: 0 }}
             animate={{
-              x: years.indexOf(activeYear) >= index ? 0 : "100%",
-              opacity: years.indexOf(activeYear) >= index ? 1 : 0,
+              x: years.findIndex(y => y.year === activeYear) >= index ? 0 : "100%",
+              opacity: years.findIndex(y => y.year === activeYear) >= index ? 1 : 0,
               rotate: randomRotations[index]
             }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <Image 
-              src={`/images/IMG_1338.jpeg`} 
+              src={image} 
               alt={`Imagen del año ${year}`} 
               width={300} 
               height={400}
@@ -156,7 +157,7 @@ export const Timeline = () => {
         ref={scrollContainerRef}
         className={styles["timeline__content-container"]}
       >
-        {years.map((year) => (
+        {years.map(({ year }) => (
           <motion.div 
             key={year} 
             className={styles["timeline__section"]}
