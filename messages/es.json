@@ -22,7 +22,9 @@
       "days": "Días",
       "hours": "Horas",
       "minutes": "Minutos",
-      "seconds": "Segundos"
+      "seconds": "Segundos",
+      "callToAction": "¡No te lo pierdas!",
+      "rsvp": "¡Quiero ir!"
     }
   },
   "Story": {

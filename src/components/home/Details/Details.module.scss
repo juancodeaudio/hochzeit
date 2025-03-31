@@ -1,12 +1,12 @@
 .Details {
   width: 100%;
-  height: 50vh;
   display: grid;
   grid-template-areas: 
     "map date"
-    "map countdown";
+    "map countdown"
+    "callaction callaction";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 10px;
   &__map-container {
     grid-area: map;
@@ -56,5 +56,13 @@
   }
   h3 {
     font-size: $font-size-lg;
+  }
+  &__callaction-container {
+    grid-area: callaction;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
   }
 }

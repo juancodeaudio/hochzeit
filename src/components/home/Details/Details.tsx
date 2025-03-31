@@ -4,6 +4,7 @@ import { useEffect, useState, useMemo } from 'react';
 import { useFormatter, useTranslations } from 'next-intl';
 import FlipClockCountdown from '@leenguyen/react-flip-clock-countdown';
 import '@leenguyen/react-flip-clock-countdown/dist/index.css';
+import { Button } from 'app/components/common/Button';
 import styles from './Details.module.scss';
 
 export const Details = () => {
@@ -43,6 +44,10 @@ export const Details = () => {
             labels={[t('days').toUpperCase(), t('hours').toUpperCase(), t('minutes').toUpperCase(), t('seconds').toUpperCase()]}
           />
         )}
+      </div>
+      <div className={styles["Details__callaction-container"]}>
+        <h3>{t('callToAction')}</h3>
+        <Button label={t('rsvp')} href='https://www.google.com'></Button>
       </div>
     </section>
   );

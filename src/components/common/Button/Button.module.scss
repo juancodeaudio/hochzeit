@@ -1,0 +1,50 @@
+.Button {
+  text-decoration: none;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: $primary;
+  height: 90px;
+  width: 220px;
+  text-align: center;
+  line-height: 90px;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 20px;
+  span {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border: 3px solid $primary;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: 0.5s;
+    z-index: -1;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 500%;
+      width: 9%;
+      top: 50%;
+      left: 50%;
+      background-color: $surface;
+      transform: translate(-50%, -50%) rotate(-60deg);
+      transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+      transition: 0.5s;
+    }
+  }
+  &:hover {
+    color: $on-primary;
+    span {
+      &::before {
+        width: 100%;
+        background-color: $primary;
+        transform: translate(-50%, -50%) rotate(60deg);
+        transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+    }
+  }
+}
