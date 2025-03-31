@@ -23,11 +23,6 @@
       "hours": "Horas",
       "minutes": "Minutos",
       "seconds": "Segundos"
-    },
-    "Timeline": {
-      "title": "Orden del Día",
-      "ceremony": "Ceremonia",
-      "party": "Fiesta"
     }
   },
   "Story": {
@@ -49,7 +44,11 @@
     "title": "Galería"
   },
   "Party": {
-    "title": "Sobre la Fiesta"
+    "PartyTimeline": {
+      "title": "Orden del Día",
+      "ceremony": "Ceremonia",
+      "party": "Fiesta"
+    }
   },
   "QA": {
     "title": "Preguntas y Respuestas"
