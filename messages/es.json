@@ -13,7 +13,10 @@
       "quote": "Frase especial o cita que nos represente a nosotros y nuestro amor.",
       "quoteAuthor": "Autor de la cita"
     },
-    "ParallaxBlock": {},
+    "ParallaxBlock": {
+      "phrase": "Una frase hermosa que hable de amor, felicidad y unión para nuestros invitados.",
+      "subtitle": "Aquí va un mensaje especial"
+    },
     "Details": {
       "when": "¿Cuándo?",
       "days": "Días",
