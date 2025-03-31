@@ -19,12 +19,12 @@ export const ParallaxBlock = () => {
     <section className={styles["ParallaxBlock"]}>
       <div className={styles["ParallaxBlock__parallax-container"]} ref={container}>
         <div className={styles["ParallaxBlock__parallax-content"]}>
-          <p>{t('title')}</p>
-          <p>{t('title')}</p>
+          <p>{t('phrase')}</p>
+          <p>{t('subtitle')}</p>
         </div>
         <div className={styles["ParallaxBlock__parallax-background"]}>
           <motion.div style={{y}} className={styles["ParallaxBlock__parallax-image"]}>
-            <Image src="/images/IMG_1704.jpeg" fill alt="image"/>
+            <Image src="/images/IMG_2098.jpeg" fill alt="image"/>
           </motion.div>
         </div>
       </div>
