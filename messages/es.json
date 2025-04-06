@@ -4,11 +4,11 @@
     "Story": "Nuestra Historia",
     "Gallery": "Galería",
     "Party": "Sobre la Fiesta",
-    "QA": "Preguntas y Respuestas"
+    "QA": "Preguntas y<br></br>Respuestas"
   },
   "Home": {
     "Hero": {
-      "title": "Camila & Juan Pablo",
+      "title": "- Camila & Juan Pablo -",
       "welcome": "Aquí va un hermoso mensaje de bienvenida.",
       "quote": "Frase especial o cita que nos represente a nosotros y nuestro amor.",
       "quoteAuthor": "Autor de la cita"
@@ -43,7 +43,7 @@
     }
   },
   "Gallery": {
-    "title": "Galería"
+    "title": "Nuestras<br></br>Memorias"
   },
   "Party": {
     "PartyTimeline": {
