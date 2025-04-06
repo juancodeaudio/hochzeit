@@ -5,6 +5,7 @@ import styles from "./GalleryParallax.module.scss";
 import Image from 'next/image';
 import { useRef, useCallback, useMemo, useState, useEffect } from "react";
 import { motion, useMotionValue, useSpring, useTransform, useScroll } from 'motion/react';
+import { useTranslations } from 'next-intl';
 
 interface ParallaxImgProps {
   className?: string;
@@ -16,6 +17,8 @@ interface ParallaxImgProps {
 }
 
 export const GalleryParallax = () => {
+  const t = useTranslations('Gallery');
+
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
@@ -84,7 +87,11 @@ export const GalleryParallax = () => {
         </motion.div>
       ))}
       <div className={styles["gallery-parallax__title"]}>
-        <h1>Nuestras memorias</h1>
+        <h2>
+          {t.rich('title', {
+            br: () => <br />,
+          })}
+        </h2>
       </div>
     </section>
   );
