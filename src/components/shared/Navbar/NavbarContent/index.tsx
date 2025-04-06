@@ -56,7 +56,9 @@ export const NavbarContent = ({ toggleNavbar, setHoveredOption, setRandomRotatio
             href={link.href}
             onClick={toggleNavbar}
           >
-            {t(link.label)}
+            {t.rich(link.label, {
+              br: () => <br />
+            })}
           </Link>
         </motion.li>
       ))}

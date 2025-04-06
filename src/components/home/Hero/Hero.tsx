@@ -22,11 +22,11 @@ export const Hero = () => {
         <motion.div className={styles["Hero__img-container"]} style={{y}}>
           <Image src="/images/IMG_1704.jpeg" fill alt="image"/>
         </motion.div>
-        <h1>{t('title')}</h1>
+        <h1 className={styles["Hero__title"]}>{t('title')}</h1>
         <h3>{t('welcome')}</h3>
       </div>
       <div className={styles["Hero__quote-container"]}>
-        <p>{t('quote')}</p>
+        <h2>{t('quote')}</h2>
         <p>- {t('quoteAuthor')}</p>
       </div>
     </section>

@@ -11,9 +11,11 @@
       position: absolute;
       top: 50%;
       left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: var(--font-amsterdam-four);
+      letter-spacing: 0.4rem;
       font-size: 3rem;
       color: $on-surface;
-      transform: translate(-50%, -50%);
       z-index: 11;
     }
     h3 {
@@ -46,15 +48,15 @@
     text-align: center;
     margin-inline: auto;
 
-    p:first-of-type {
-      font-size: 5vw;
+    h2 {
+      font-size: 5rem;
       text-transform: uppercase;
       line-height: normal;
       color: $primary;
     }
 
-    p:last-of-type {
-      font-size: 2vw;
+    p {
+      font-size: 2rem;
       font-style: italic;
       margin-top: 10px;
       opacity: 0.8;
