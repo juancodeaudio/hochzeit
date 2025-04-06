@@ -44,7 +44,6 @@ export const Details = () => {
           style={{width: 600, height: 400, borderRadius: "2rem"}}
           mapStyle={mapStyle as unknown as string}
         >
-          {/* <Marker longitude={-74.069251} latitude={4.616568} anchor="bottom" color='#A5AF88' /> */}
           <Marker longitude={-74.069251} latitude={4.616568} anchor="bottom">
             <motion.div 
               animate={{ 
