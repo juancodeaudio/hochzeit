@@ -1,9 +1,10 @@
-import { Accordion } from "app/components/QA";
+import { QATitle } from "app/components/QA/QATitle";
+import { Accordion } from "app/components/QA/Accordion";
 
 export default function QA() {
   return (
     <main>
-      <h1 style={{ height: "100px" }}>Preguntas y respuestas</h1>
+      <QATitle />
       <Accordion />
     </main>
   );

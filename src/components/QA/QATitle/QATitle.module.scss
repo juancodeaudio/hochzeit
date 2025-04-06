@@ -1,0 +1,19 @@
+.QATitle {
+  height: 13rem;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 2rem;
+  padding-inline: 1rem;
+}
+
+// Query for mobile
+@media (max-width: 768px) {
+  .QATitle {
+    height: 11rem;
+    padding-bottom: 1rem;
+    padding-inline: 2rem;
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
