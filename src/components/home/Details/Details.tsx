@@ -41,7 +41,6 @@ export const Details = () => {
             latitude: 4.616568,
             zoom: 17
           }}
-          style={{width: 600, height: 400, borderRadius: "2rem"}}
           mapStyle={mapStyle as unknown as string}
         >
           <Marker longitude={-74.069251} latitude={4.616568} anchor="bottom">

@@ -9,16 +9,30 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 2fr;
   gap: 10px;
+  padding-block: 2rem;
+  @include for-size(phone) {
+    grid-template-areas: 
+      "map"
+      "date"
+      "countdown"
+      "callaction";
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+  }
   &__map-container {
     grid-area: map;
     width: 100%;
     height: 100%;
+    min-height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
     border-radius: 2rem;
     overflow: hidden;
+    canvas {
+      border-radius: 1.5rem;
+    }
   }
   &__date-container {
     grid-area: date;
@@ -50,6 +64,18 @@
     // COLON
     --fcc-separator-size: 6px;
     --fcc-separator-color: #702609;
+    @include for-size(phone) {
+      padding: 1.5rem;
+      border-radius: 1.5rem;
+      --fcc-spacing: 4px; /* space between unit times and separators */
+      --fcc-digit-block-width: 25px; /* width of digit card */
+      --fcc-digit-block-height: 45px; /* height of digit card, highly recommend in even number */
+      --fcc-digit-block-radius: 7px; /* border radius of digit card */
+      --fcc-digit-block-spacing: 3px; /* space between blocks in each unit of time */
+      --fcc-digit-font-size: 25px; /* font size of digit */
+      --fcc-label-font-size: 10px; /* font size of label */
+      --fcc-separator-size: 4px; /* size of colon */
+    }
   }
   h3 {
     font-size: $font-size-lg;
