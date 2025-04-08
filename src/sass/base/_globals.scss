@@ -1,3 +1,4 @@
+@use '../abstracts/mixins' as *;
 @use '../abstracts/theme' as *;
 
 body {
@@ -10,8 +11,11 @@ main {
 
 h2 {
   font-family: var(--font-atteron);
-  font-size: 4rem;
+  @include font-size(40);
   color: $primary;
+  @include for-size(phone) {
+    @include font-size(20);
+  }
 }
 
 img {

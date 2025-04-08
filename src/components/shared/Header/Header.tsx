@@ -22,7 +22,11 @@ export const Header = () => {
   }, [scrollY]);
 
   const variants = {
-    initial: { scale: 6, x: "calc(-47.5vw + 2rem + 50%)", y: "45vh" },
+    initial: {
+      scale: "var(--logo-scale)",
+      x: "calc(-47.5vw + 2rem + 50%)",
+      y: "45vh"
+    },
     scrolled: { scale: 1, x: "0", y: "0vh" },
   };
 

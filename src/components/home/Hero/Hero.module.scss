@@ -11,20 +11,29 @@
       position: absolute;
       top: 50%;
       left: 50%;
+      width: 100%;
       transform: translate(-50%, -50%);
       font-family: var(--font-amsterdam-four);
-      letter-spacing: 0.4rem;
-      font-size: 3rem;
+      @include font-size(30, 50, 4);
+      @include for-size(phone) {
+        @include font-size(25, 35, 2);
+      }
+      text-align: center;
       color: $on-surface;
       z-index: 11;
     }
     h3 {
-      font-size: 2rem;
       color: $on-surface;
       position: absolute;
       top: 90%;
       left: 50%;
+      width: 90%;
       transform: translate(-50%, -50%);
+      text-align: center;
+      @include font-size(20);
+      @include for-size(phone) {
+        @include font-size(15);
+      }
     }
   }
   &__img-container {
@@ -49,19 +58,25 @@
     margin-inline: auto;
 
     h2 {
-      font-size: 5rem;
       text-transform: uppercase;
       line-height: normal;
       color: $primary;
+      @include font-size(50);
+      @include for-size(phone) {
+        @include font-size(30);
+      }
     }
 
     p {
-      font-size: 2rem;
       font-style: italic;
       margin-top: 10px;
       opacity: 0.8;
       align-self: flex-end;
       color: $primary;
+      @include font-size(20);
+      @include for-size(phone) {
+        @include font-size(15);
+      }
     }
   }
 }

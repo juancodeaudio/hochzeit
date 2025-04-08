@@ -4,9 +4,7 @@
 }
 
 @mixin font-size($font-size, $line-height: normal, $letter-spacing: normal) {
-  font-size: $font-size * 1px;
-  // font-size: $font-size * 0.1rem;
-  // example using rem values and 62.5% font-size so 1rem = 10px
+  font-size: $font-size * 0.1rem;
 
   @if $line-height==normal {
     line-height: normal;
@@ -18,5 +16,27 @@
     letter-spacing: normal;
   } @else {
     letter-spacing: #{$letter-spacing / $font-size}em;
+  }
+}
+
+@mixin for-size($size) {
+  @if $size == phone {
+    @media (max-width: 600px) {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media (min-width: 600px) and (max-width: 1200px) {
+      @content;
+    }
+  } @else if $size == desktop {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $size == all {
+    @media (min-width: 0px) and (max-width: 1200px) {
+      @content;
+    }
+  } @else {
+    @warn "Invalid size specified. Use 'phone', 'tablet', 'desktop', or 'all'.";
   }
 }
