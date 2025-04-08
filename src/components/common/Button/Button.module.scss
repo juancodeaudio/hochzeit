@@ -12,6 +12,12 @@
   overflow: hidden;
   cursor: pointer;
   border-radius: 20px;
+  @include for-size(phone) {
+    font-size: 20px;
+    height: 70px;
+    width: 150px;
+    line-height: 70px;
+  }
   span {
     position: absolute;
     height: 100%;
