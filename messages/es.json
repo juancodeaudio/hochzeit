@@ -9,13 +9,13 @@
   "Home": {
     "Hero": {
       "title": "Camila & JuanPablo",
-      "welcome": "Aquí va un hermoso mensaje de bienvenida.",
-      "quote": "Frase especial o cita que nos represente a nosotros y nuestro amor.",
-      "quoteAuthor": "Autor de la cita"
+      "welcome": "Nos emociona celebrar este momento rodeados de quienes han hecho nuestra historia más bonita.",
+      "quote": "...Hemos hecho todo juntos, y yo sólo conozco una manera de medir el tiempo: contigo y sin ti.",
+      "quoteAuthor": "Roberto Benigni"
     },
     "ParallaxBlock": {
-      "phrase": "Una frase hermosa que hable de amor, felicidad y unión para nuestros invitados.",
-      "subtitle": "Aquí va un mensaje especial"
+      "phrase": "Es increíble cómo un día alguien entra en tu vida y, de repente, no puedes recordar cómo vivías sin esa persona.",
+      "subtitle": "Hay partes de mí que sólo existen cuando estoy contigo."
     },
     "Details": {
       "when": "¿Cuándo?",
@@ -23,7 +23,7 @@
       "hours": "Horas",
       "minutes": "Minutos",
       "seconds": "Segundos",
-      "callToAction": "¡No te lo pierdas!",
+      "callToAction": "¡Acompañanos!",
       "rsvp": "¡Quiero ir!"
     }
   },
@@ -43,7 +43,9 @@
     }
   },
   "Gallery": {
-    "title": "Nuestras<br></br>Memorias"
+    "title": "Nuestras<br></br>Memorias",
+    "quote": "...fue lo que ellos llaman amor a primera vista. De hecho, a última vista. De hecho, a eterna vista.",
+    "quoteAuthor": "Roberto Benigni"
   },
   "Party": {
     "PartyTimeline": {
@@ -56,36 +58,40 @@
     "title": "Preguntas y Respuestas",
     "Accordion": {
       "01": {
-        "question": "¿Dónde se llevará a cabo la ceremonia?",
-        "answer": "La ceremonia se llevará a cabo en el lugar de la fiesta."
+        "question": "¿Cuando y dónde será la boda?",
+        "answer": ""
       },
       "02": {
-        "question": "¿A qué hora comienza la fiesta?",
-        "answer": "La fiesta comenzará a las 6:00 PM."
+        "question": "¿Hay código de vestimenta?",
+        "answer": ""
       },
       "03": {
-        "question": "¿Habrá transporte disponible?",
-        "answer": "Sí, habrá transporte disponible desde el hotel hasta el lugar de la fiesta."
+        "question": "¿Hay opción de menú vegetariano?",
+        "answer": ""
       },
       "04": {
-        "question": "¿Qué tipo de comida habrá?",
-        "answer": "Habrá una variedad de opciones de comida para todos los gustos."
+        "question": "¿Puedo llevar a alguien más con mi invitación?",
+        "answer": ""
       },
       "05": {
-        "question": "¿Puedo llevar a un acompañante?",
-        "answer": "Sí, puedes llevar a un acompañante. Por favor, indícalo en tu RSVP."
+        "question": "¿Habrá parqueadero disponible?",
+        "answer": ""
       },
       "06": {
-        "question": "¿Habrá música en vivo?",
-        "answer": "Sí, habrá música en vivo durante toda la fiesta."
+        "question": "¿A qué hora empieza la ceremonia y cuánto durará?",
+        "answer": ""
       },
       "07": {
-        "question": "¿Qué tipo de vestimenta se recomienda?",
-        "answer": "Se recomienda vestimenta formal o de gala."
+        "question": "¿A qué hora debería llegar?",
+        "answer": ""
       },
       "08": {
-        "question": "¿Habrá estacionamiento disponible?",
-        "answer": "Sí, habrá estacionamiento disponible en el lugar de la fiesta."
+        "question": "¿Cuando es la fecha límite para confirmar asistencia?",
+        "answer": ""
+      },
+      "09": {
+        "question": "¿Puedo tomar fotos durante la ceremonia?",
+        "answer": ""
       }
     }
   }
