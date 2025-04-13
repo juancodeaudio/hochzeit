@@ -40,7 +40,7 @@ export const GalleryScroll = () => {
   const rotate7 = useTransform(progress2, [0, 1], ["-2deg", "0deg"]);
 
   const pictures = [
-    { src: "/images/IMG_2098.jpeg", scale: scale4, parallax: parallaxUp90, rotate: rotate1 }, //CENTER
+    { src: "/images/IMG_1890.jpeg", scale: scale4, parallax: parallaxUp90, rotate: rotate1 }, //CENTER
     { src: "/images/IMG_1704.jpeg", scale: scale5, parallax: parallaxUp200, rotate: rotate2 }, //TOP
     { src: "/images/IMG_1338.jpeg", scale: scale6, parallax: parallaxUp50, rotate: rotate3 }, //VERTICAL
     { src: "/images/IMG_1704.jpeg", scale: scale5, parallax: parallaxUp140, rotate: rotate4 }, //RIGHT
