@@ -50,26 +50,26 @@ export const GalleryParallax = () => {
       transformX: planeTransforms.plane1X,
       transformY: planeTransforms.plane1Y,
       images: [
-        { src: '/images/IMG_1338.jpeg', width: 400, start: 0, end: 0 },
-        { src: '/images/IMG_2098.jpeg', width: 400, start: 0, end: 0 },
-        { src: '/images/IMG_2098.jpeg', width: 325, start: 50, end: -50 }
+        { src: '/images/IMG_3264.jpeg', width: 400, start: 0, end: 0 },
+        { src: '/images/IMG_6826.jpeg', width: 400, start: 0, end: 0 },
+        { src: '/images/IMG_0246.jpeg', width: 325, start: 50, end: -50 }
       ]
     },
     {
       transformX: planeTransforms.plane2X,
       transformY: planeTransforms.plane2Y,
       images: [
-        { src: '/images/IMG_1704.jpeg', width: 350, start: 100, end: 0 },
-        { src: '/images/IMG_1704.jpeg', width: 300, start: 0, end: 50 },
-        { src: '/images/IMG_1338.jpeg', width: 325, start: -50, end: 0 }
+        { src: '/images/IMG_3192.jpeg', width: 350, start: 100, end: 0 },
+        { src: '/images/IMG_0000.jpeg', width: 300, start: 0, end: 50 },
+        { src: '/images/IMG_8011.jpeg', width: 325, start: -50, end: 0 }
       ]
     },
     {
       transformX: planeTransforms.plane3X,
       transformY: planeTransforms.plane3Y,
       images: [
-        { src: '/images/IMG_2098.jpeg', width: 250, start: -150, end: 100 },
-        { src: '/images/IMG_1704.jpeg', width: 400, start: -70, end: 100 }
+        { src: '/images/IMG_0001.jpeg', width: 250, start: -150, end: 100 },
+        { src: '/images/IMG_9601.jpeg', width: 400, start: -70, end: 100 }
       ]
     }
   ];
