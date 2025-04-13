@@ -31,9 +31,10 @@
       mix-blend-mode: difference;
 
       &:first-of-type {
-        width: 50vw;
+        width: 40vw;
         font-size: 2vw;
         align-self: flex-end;
+        text-align: right;
       }
 
       &:last-of-type {

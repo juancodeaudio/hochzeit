@@ -24,7 +24,7 @@ export const ParallaxBlock = () => {
         </div>
         <div className={styles["ParallaxBlock__parallax-background"]}>
           <motion.div style={{y}} className={styles["ParallaxBlock__parallax-image"]}>
-            <Image src="/images/IMG_2098.jpeg" fill alt="image"/>
+            <Image src="/images/IMG_1300.jpeg" fill alt="image"/>
           </motion.div>
         </div>
       </div>
