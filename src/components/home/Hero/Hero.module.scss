@@ -1,41 +1,37 @@
 .Hero {
   width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  &__main {
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-    h1 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 100%;
-      transform: translate(-50%, -50%);
-      font-family: var(--font-amsterdam-four);
-      @include font-size(30, 50, 4);
-      @include for-size(phone) {
-        @include font-size(25, 35, 2);
-      }
-      text-align: center;
-      color: $on-surface;
-      z-index: 11;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-amsterdam-four);
+    @include font-size(30, 50, 4);
+    @include for-size(phone) {
+      @include font-size(25, 35, 2);
     }
-    h3 {
-      color: $on-surface;
-      position: absolute;
-      top: 90%;
-      left: 50%;
-      width: 90%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      @include font-size(20);
-      @include for-size(phone) {
-        @include font-size(15);
-      }
+    text-align: center;
+    color: $on-surface;
+    z-index: 11;
+  }
+  h3 {
+    color: $on-surface;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    @include font-size(20);
+    @include for-size(phone) {
+      @include font-size(15);
     }
   }
+
   &__img-container {
     position: relative;
     height: 100%;
@@ -43,40 +39,9 @@
     z-index: -1;
     img {
       object-fit: cover;
+      object-position: center bottom;
       filter: sepia(100%) grayscale(90%) blur(10px);
       opacity: 0.4;
-    }
-  }
-  &__quote-container {
-    height: 90vh;
-    max-width: 60vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-inline: auto;
-
-    h2 {
-      text-transform: uppercase;
-      line-height: normal;
-      color: $primary;
-      @include font-size(50);
-      @include for-size(phone) {
-        @include font-size(30);
-      }
-    }
-
-    p {
-      font-style: italic;
-      margin-top: 10px;
-      opacity: 0.8;
-      align-self: flex-end;
-      color: $primary;
-      @include font-size(20);
-      @include for-size(phone) {
-        @include font-size(15);
-      }
     }
   }
 }
