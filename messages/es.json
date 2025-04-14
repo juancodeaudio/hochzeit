@@ -43,7 +43,8 @@
     }
   },
   "Gallery": {
-    "title": "Nuestras<br></br>Memorias",
+    "memories": "Nuestras<br></br>Memorias...",
+    "time": "...Nuestro<br></br>tiempo...",
     "quote": "...fue lo que ellos llaman amor a primera vista. De hecho, a última vista. De hecho, a eterna vista.",
     "quoteAuthor": "Roberto Benigni"
   },
