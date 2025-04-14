@@ -48,10 +48,10 @@ export const galleryImages3 = [
 ];
 
 export const partyTimelineItems = [
-  { moment: "ceremony", hour: '5:30 PM', text: 'Ceremonia', image: '/icons/rings.png', alt: 'Ceremonia' },
-  { moment: "pictures", hour: '6:00 PM', text: 'Fotos', image: '/icons/pictures.png', alt: 'Fotos' },
-  { moment: "dinner", hour: '7:00 PM', text: 'Comida y brindis', image: '/icons/dish.png', alt: 'Comida y brindis' },
-  { moment: "dance", hour: '8:00 PM', text: 'Primer baile', image: '/icons/dancing.png', alt: 'Primer baile' },
-  { moment: "party", hour: '8:00 PM', text: 'Fiesta', image: '/icons/party.png', alt: 'Fiesta' },
-  { moment: "end", hour: '12:00 AM', text: 'Fin del evento', image: '/icons/wedding-car.png', alt: 'Fin del evento' }
+  { moment: "ceremony", image: '/icons/rings.png' },
+  { moment: "pictures", image: '/icons/pictures.png' },
+  { moment: "dinner", image: '/icons/dish.png' },
+  { moment: "dance", image: '/icons/dancing.png' },
+  { moment: "party", image: '/icons/party.png' },
+  { moment: "end", image: '/icons/wedding-car.png' }
 ];
