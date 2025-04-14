@@ -6,17 +6,11 @@ import Image from 'next/image';
 import { useRef, useCallback, useMemo, useState, useEffect } from "react";
 import { motion, useMotionValue, useSpring, useTransform, useScroll } from 'motion/react';
 import { useTranslations } from 'next-intl';
+import { GalleryImage } from "app/constants/types";
 
 interface ParallaxImgProps {
   className?: string;
   alt: string;
-  src: string;
-  width: number;
-  start: number;
-  end: number;
-}
-
-interface GalleryImage {
   src: string;
   width: number;
   start: number;

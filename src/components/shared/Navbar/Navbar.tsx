@@ -5,13 +5,13 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { NavbarButton } from "./NavbarButton";
 import { NavbarContent } from "./NavbarContent";
-import { navLinks } from "app/constants/config";
+import { NavLink } from "app/constants/types";
 
 import styles from "./Navbar.module.scss";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [hoveredOption, setHoveredOption] = useState<null | typeof navLinks[0]>(null);
+  const [hoveredOption, setHoveredOption] = useState<null | NavLink>(null);
   const [randomRotation, setRandomRotation] = useState(0);
 
   const toggleNavbar = () => {

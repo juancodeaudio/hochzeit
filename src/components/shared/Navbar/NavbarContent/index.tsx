@@ -4,10 +4,11 @@ import { motion } from "motion/react";
 import { Link } from 'app/i18n/navigation';
 import { navLinks } from "app/constants/config";
 import styles from "./NavbarContent.module.scss";
+import { NavLink } from "app/constants/types";
 
 type NavbarContentProps = {
   toggleNavbar: () => void;
-  setHoveredOption: (option: typeof navLinks[0] | null) => void;
+  setHoveredOption: (option: NavLink | null) => void;
   setRandomRotation: (rotation: number) => void;
 };
 

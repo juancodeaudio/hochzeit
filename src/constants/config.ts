@@ -1,4 +1,6 @@
-export const navLinks = [
+import { Color, NavLink, TimelineYear, GalleryImage, PartyTimelineItem } from "app/constants/types";
+
+export const navLinks: NavLink[] = [
   { href: "/", label: "Home", image: "/images/IMG_1890.jpeg" },
   { href: "/story", label: "Story", image: "/images/IMG_3537.jpeg" },
   { href: "/gallery", label: "Gallery", image: "/images/IMG_5106.jpeg", isVertical: true },
@@ -12,7 +14,7 @@ export const siteMetadata = {
   url: "https://nuestraboda.com", // Ajusta con el dominio real
 };
 
-export const timelineYears = [
+export const timelineYears: TimelineYear[] = [
   { year: 2016, image: "/images/IMG_1890.jpeg", isVertical: false },
   { year: 2017, image: "/images/IMG_1338.jpeg", isVertical: true },
   { year: 2018, image: "/images/IMG_1890.jpeg", isVertical: false },
@@ -25,7 +27,7 @@ export const timelineYears = [
   { year: 2025, image: "/images/IMG_1338.jpeg", isVertical: true },
 ];
 
-export const galleryImages1 = [
+export const galleryImages1: GalleryImage[] = [
   { src: "/images/IMG_3264.jpeg", width: 400, start: 0, end: 0 },
   { src: "/images/IMG_3192.jpeg", width: 350, start: 100, end: 0 },
   { src: "/images/IMG_0001.jpeg", width: 250, start: -150, end: 100 },
@@ -36,7 +38,7 @@ export const galleryImages1 = [
   { src: "/images/IMG_8011.jpeg", width: 325, start: -50, end: 0 },
 ];
 
-export const galleryImages3 = [
+export const galleryImages3: GalleryImage[] = [
   { src: "/images/IMG_3264.jpeg", width: 400, start: 0, end: 0 },
   { src: "/images/IMG_3192.jpeg", width: 350, start: 100, end: 0 },
   { src: "/images/IMG_0001.jpeg", width: 250, start: -150, end: 100 },
@@ -47,11 +49,20 @@ export const galleryImages3 = [
   { src: "/images/IMG_8011.jpeg", width: 325, start: -50, end: 0 },
 ];
 
-export const partyTimelineItems = [
+export const partyTimelineItems: PartyTimelineItem[] = [
   { moment: "ceremony", image: '/icons/rings.png' },
   { moment: "pictures", image: '/icons/pictures.png' },
   { moment: "dinner", image: '/icons/dish.png' },
   { moment: "dance", image: '/icons/dancing.png' },
   { moment: "party", image: '/icons/party.png' },
   { moment: "end", image: '/icons/wedding-car.png' }
+];
+
+export const paletteColors: Color[] = [
+  { name: 'Black Bean', hex: '#401107', fontColor: '#EADCD6' },
+  { name: 'Seal Brown', hex: '#702609', fontColor: '#EADCD6' },
+  { name: 'Beaver', hex: '#B88672', fontColor: '#401107' },
+  { name: 'Champagne Pink', hex: '#EADCD6', fontColor: '#B88672' },
+  { name: 'Dark Moss Green', hex: '#3D441E', fontColor: '#D9D4C1' },
+  { name: 'Bone', hex: '#D9D4C1', fontColor: '#3D441E' },
 ];

@@ -7,6 +7,7 @@ import { motion } from 'motion/react';
 
 import styles from './PartyTimeline.module.scss';
 import { partyTimelineItems } from 'app/constants/config';
+import { PartyTimelineItem } from 'app/constants/types';
 
 export const PartyTimeline = () => {
   const t = useTranslations('Party.PartyTimeline');
@@ -21,7 +22,7 @@ export const PartyTimeline = () => {
         >
           <div className={styles["PartyTimeline__progress-bar"]}></div>
         </motion.div>
-        {partyTimelineItems.map((item, index) => (
+        {partyTimelineItems.map((item: PartyTimelineItem, index) => (
           <div className={styles["PartyTimeline__item"]} key={index}>
             <motion.div
               className={styles["PartyTimeline__item-hour"]}

@@ -6,6 +6,7 @@ import { motion, useTransform, MotionValue, animate, useScroll, useSpring } from
 import Image from 'next/image';
 import styles from './Timeline.module.scss';
 import { timelineYears } from 'app/constants/config';
+import { TimelineYear } from 'app/constants/types';
 
 interface YearButtonProps {
   year: number;
@@ -15,7 +16,7 @@ interface YearButtonProps {
   totalYears: number;
 }
 
-function YearButton({ year, index, scrollProgress, onClick, totalYears }: YearButtonProps) {
+const YearButton = ({ year, index, scrollProgress, onClick, totalYears }: YearButtonProps) => {
   const progress = useTransform<number, number>(
     scrollProgress,
     Array.from({ length: totalYears }, (_, i) => i / (totalYears - 1)),
@@ -45,7 +46,7 @@ function YearButton({ year, index, scrollProgress, onClick, totalYears }: YearBu
 
 export const Timeline = () => {
   const t = useTranslations('Story.Timeline');
-  const years = useMemo(() => timelineYears, []);
+  const years = useMemo<TimelineYear[]>(() => timelineYears, []);
   const [activeYear, setActiveYear] = useState<(typeof years)[number]['year']>(years[0].year);
   const [isAnimatingOut, setIsAnimatingOut] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
