@@ -1,9 +1,8 @@
-import { Timeline } from "app/components/story/Timeline";
+import { Timeline } from "app/components/story";
 
 export default function Story() {
   return (
     <main>
-      {/* <h1>Nuestra historia</h1> */}
       <Timeline />
     </main>
   );

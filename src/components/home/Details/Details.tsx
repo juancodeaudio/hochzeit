@@ -9,7 +9,7 @@ import mapStyle from 'app/constants/map-styles.json';
 import FlipClockCountdown from '@leenguyen/react-flip-clock-countdown';
 import '@leenguyen/react-flip-clock-countdown/dist/index.css';
 import { motion } from 'motion/react';
-import { Button } from 'app/components/common/Button';
+import { Button } from 'app/components/common';
 import styles from './Details.module.scss';
 
 export const Details = () => {

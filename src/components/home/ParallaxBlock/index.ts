@@ -1,1 +1,0 @@
-export { ParallaxBlock } from "./ParallaxBlock";

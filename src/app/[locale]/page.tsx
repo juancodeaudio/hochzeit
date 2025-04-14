@@ -1,7 +1,5 @@
-import { Hero } from "app/components/home/Hero";
-import { ParallaxBlock } from "app/components/home/ParallaxBlock";
-import { Details } from "app/components/home/Details";
-import { Quote } from "app/components/common/Quote";
+import { Hero, ParallaxBlock, Details } from "app/components/home";
+import { Quote } from "app/components/common";
 import { useTranslations } from 'next-intl';
 
 export default function Home() {

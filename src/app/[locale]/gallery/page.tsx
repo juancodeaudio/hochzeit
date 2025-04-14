@@ -1,7 +1,6 @@
-import {useTranslations} from 'next-intl';
-import { GalleryParallax } from "app/components/gallery/GalleryParallax";
-import { GalleryScroll } from "app/components/gallery/GalleryScroll";
-import { Quote } from "app/components/common/Quote";
+import { useTranslations } from 'next-intl';
+import { GalleryParallax, GalleryScroll } from "app/components/gallery";
+import { Quote } from "app/components/common";
 import { galleryImages1, galleryImages3 } from 'app/constants/config';
 
 export default function Gallery() {
