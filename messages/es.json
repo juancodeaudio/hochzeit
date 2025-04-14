@@ -50,9 +50,30 @@
   },
   "Party": {
     "PartyTimeline": {
-      "title": "Orden del Día",
-      "ceremony": "Ceremonia",
-      "party": "Fiesta"
+      "ceremony": {
+        "hour": "5:30 PM",
+        "title": "Ceremonia"
+      },
+      "pictures": {
+        "hour": "6:00 PM",
+        "title": "Fotos"
+      },
+      "dinner": {
+        "hour": "7:00 PM",
+        "title": "Comida y brindis"
+      },
+      "dance": {
+        "hour": "8:00 PM",
+        "title": "Primer baile"
+      },
+      "party": {
+        "hour": "8:00 PM",
+        "title": "Fiesta"
+      },
+      "end": {
+        "hour": "12:00 AM",
+        "title": "Fin del evento"
+      }
     }
   },
   "QA": {
