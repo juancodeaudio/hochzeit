@@ -1,0 +1,43 @@
+.PageTitle {
+  display: flex;
+  background-color: $surface;
+
+  &--small {
+    align-items: flex-end;
+    height: 13rem;
+    padding-bottom: 2rem;
+    padding-inline: 1rem;
+
+    @include for-size(phone) {
+      height: 11rem;
+      padding-bottom: 1rem;
+      padding-inline: 2rem;
+    }
+  }
+
+  &--medium {
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+
+  &--large {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  &__title {
+    @include font-size(40, 42, -0.03);
+
+    &--small {
+      @include font-size(32, 34, -0.03);
+    }
+    &--medium {
+      @include font-size(48, 50, -0.03);
+    }
+    &--large {
+      @include font-size(56, 58, -0.03);
+    }
+  }
+}

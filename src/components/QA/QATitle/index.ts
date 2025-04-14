@@ -1,1 +1,0 @@
-export { QATitle } from "./QATitle";
