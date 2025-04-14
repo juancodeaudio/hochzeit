@@ -49,7 +49,7 @@ export const PartyTimeline = () => {
                 initial={{ scale: 0.5, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1, transition: { duration: 0.5, ease: [0.645, 0.045, 0.355, 1], delay: 0.1 } }}
               >
-                <Image src={item.image} loading="lazy" width="200" height={100} alt={t(`${item.moment}.title`)} />
+                <Image src={item.image} loading="lazy" fill alt={t(`${item.moment}.title`)} />
               </motion.div>
             </div>
           </div>
