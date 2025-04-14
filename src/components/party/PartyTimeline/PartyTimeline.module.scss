@@ -108,6 +108,7 @@
     
       .margin-bottom-medium {
         margin-bottom: 32px;
+        overflow: hidden;
         
         h3 {
           @include font-size(20);
