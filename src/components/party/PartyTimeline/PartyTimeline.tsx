@@ -1,5 +1,10 @@
-import {useTranslations} from 'next-intl';
+"use client";
+
 import Image from 'next/image';
+
+import {useTranslations} from 'next-intl';
+import { motion } from 'motion/react';
+
 import styles from './PartyTimeline.module.scss';
 import { partyTimelineItems } from 'app/constants/config';
 
@@ -9,24 +14,43 @@ export const PartyTimeline = () => {
   return (
     <section className={styles["PartyTimeline"]}>
       <div className={styles["PartyTimeline__container"]}>
-        <div className={styles["PartyTimeline__progress"]}>
+        <motion.div
+          className={styles["PartyTimeline__progress"]}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { duration: 0.5, ease: [0.645, 0.045, 0.355, 1] } }}
+        >
           <div className={styles["PartyTimeline__progress-bar"]}></div>
-        </div>
+        </motion.div>
         {partyTimelineItems.map((item, index) => (
           <div className={styles["PartyTimeline__item"]} key={index}>
-            <div className={styles["PartyTimeline__item-hour"]}>
+            <motion.div
+              className={styles["PartyTimeline__item-hour"]}
+              initial={{ scale: 0.5, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1, transition: { duration: 0.5, ease: [0.645, 0.045, 0.355, 1] } }}
+            >
               <h2>{t(`${item.moment}.hour`)}</h2>
-            </div>
-            <div className={styles["PartyTimeline__item-marker"]}>
+            </motion.div>
+            <motion.div
+              className={styles["PartyTimeline__item-marker"]}
+              initial={{ scale: 0.5, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1, transition: { duration: 0.5, ease: [0.645, 0.045, 0.355, 1] } }}
+            >
               <div className={styles["marker-dot"]}></div>
-            </div>
+            </motion.div>
             <div className={styles["PartyTimeline__item-details"]}>
               <div className={styles["margin-bottom-medium"]}>
-                <h3>{t(`${item.moment}.title`)}</h3>
+                <motion.h3
+                  initial={{ x: 50, opacity: 0 }}
+                  whileInView={{ x: 1, opacity: 1, transition: { duration: 0.5, ease: [0.645, 0.045, 0.355, 1], delay: 0.1 } }}
+                >{t(`${item.moment}.title`)}</motion.h3>
               </div>
-              <div className={styles["margin-bottom-xlarge"]}>
+              <motion.div
+                className={styles["margin-bottom-xlarge"]}
+                initial={{ scale: 0.5, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1, transition: { duration: 0.5, ease: [0.645, 0.045, 0.355, 1], delay: 0.1 } }}
+              >
                 <Image src={item.image} loading="lazy" width="200" height={100} alt={t(`${item.moment}.title`)} />
-              </div>
+              </motion.div>
             </div>
           </div>
         ))}
