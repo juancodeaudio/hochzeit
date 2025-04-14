@@ -1,7 +1,160 @@
 .PartyTimeline {
-  width: 100%;
-  height: 50vh;
-  h3 {
-    font-size: $font-size-lg;
+  z-index: -1;
+  position: relative;
+  width: 90vw;
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  &__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: relative;
+  }
+  
+  &__progress {
+    z-index: -2;
+    background-color: $neutral-80;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+  
+    @include for-size(phone) {
+      left: 6px;
+    }
+    
+    &-bar {
+      z-index: -1;
+      background: $primary;
+    
+      width: 3px;
+      height: 50vh;
+      position: fixed;
+      inset: 0 auto 50vh;
+    }
+  }
+  
+  &__item {
+    z-index: 2;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 180px 1fr;
+    grid-auto-columns: 1fr;
+    padding-block: 30px;
+    display: grid;
+    position: relative;
+  
+    @include for-size(phone) {
+      grid-template-columns: 64px 1fr;
+      width: 100%;
+    }
+    
+    &-hour {
+      text-align: right;
+      justify-content: flex-end;
+      align-items: stretch;
+  
+      @include for-size(phone) {
+        text-align: left;
+        grid-area: 1 / 2 / 2 / 3;
+      }
+      
+      h2 {
+        letter-spacing: -0.03em;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 1.2;
+        position: sticky;
+        top: 50vh;
+  
+        @include for-size(phone) {
+          margin-bottom: 24px;
+        }
+      }
+    }
+    
+    &-marker {
+      justify-content: center;
+      display: flex;
+  
+      @include for-size(phone) {
+        justify-content: flex-start;
+        grid-area: 1 / 1 / 3 / 2;
+      }
+      
+      .marker-dot {
+        background-color: $primary;
+        border-radius: 100%;
+        width: 15px;
+        min-width: 15px;
+        max-width: 15px;
+        height: 15px;
+        min-height: 15px;
+        max-height: 15px;
+        position: sticky;
+        top: 50vh;
+        box-shadow: 0 0 0 8px $surface;
+      }
+    }
+    
+    &-details {
+      grid-area: span 1 / span 1 / span 1 / span 1;
+    
+      .margin-bottom-medium {
+        margin-bottom: 32px;
+        
+        h3 {
+          @include font-size(20);
+          color: $primary;
+          @include for-size(phone) {
+            @include font-size(15);
+          }
+        }
+      }
+    
+      .margin-bottom-xlarge {
+        margin-bottom: 56px;
+        border: 3px solid $neutral-80;
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+  
+        @include for-size(phone) {
+          margin-bottom: 48px;
+        }
+    
+        img {
+          vertical-align: middle;
+          max-width: 100%;
+          display: inline-block;
+          border: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  
+  &__fade-top {
+    background-image: linear-gradient($surface, #0a0a0a00);
+    height: 80px;
+    position: absolute;
+    inset: 0% 0% auto;
+  }
+  
+  &__fade-bottom {
+    background-image: linear-gradient(to top, $surface, #0a0a0a00);
+    height: 80px;
+    position: absolute;
+    inset: auto 0% 0%;
   }
 }

@@ -46,3 +46,12 @@ export const galleryImages3 = [
   { src: "/images/IMG_0246.jpeg", width: 325, start: 50, end: -50 },
   { src: "/images/IMG_8011.jpeg", width: 325, start: -50, end: 0 },
 ];
+
+export const partyTimelineItems = [
+  { moment: "ceremony", hour: '5:30 PM', text: 'Ceremonia', image: '/icons/rings.png', alt: 'Ceremonia' },
+  { moment: "pictures", hour: '6:00 PM', text: 'Fotos', image: '/icons/pictures.png', alt: 'Fotos' },
+  { moment: "dinner", hour: '7:00 PM', text: 'Comida y brindis', image: '/icons/dish.png', alt: 'Comida y brindis' },
+  { moment: "dance", hour: '8:00 PM', text: 'Primer baile', image: '/icons/dancing.png', alt: 'Primer baile' },
+  { moment: "party", hour: '8:00 PM', text: 'Fiesta', image: '/icons/party.png', alt: 'Fiesta' },
+  { moment: "end", hour: '12:00 AM', text: 'Fin del evento', image: '/icons/wedding-car.png', alt: 'Fin del evento' }
+];
