@@ -82,39 +82,43 @@
     "Accordion": {
       "01": {
         "question": "¿Cuando y dónde será la boda?",
-        "answer": ""
+        "answer": "La cita es el 9 de agosto de 2025 en Bitecca e Vino, en Bogotá. Ese día queremos compartir con ustedes un pedacito de nuestra historia, entre brindis, abrazos y mucha emoción. ¡Nos hace muy felices que nos acompañen!"
       },
       "02": {
         "question": "¿Hay código de vestimenta?",
-        "answer": ""
+        "answer": "Sí, y queremos que se sientan parte de esta celebración también con los colores y el estilo. Para los hombres: traje con corbata, evitando el color verde, blanco o similares, y sin chaleco. Para las mujeres: vestido largo, cóctel o midi, evitando el blanco o similares, y siguiendo la paleta de colores que encontrarán en la pestaña 'Sobre la fiesta'."
       },
       "03": {
         "question": "¿Hay opción de menú vegetariano?",
-        "answer": ""
+        "answer": "Sí, por supuesto. Queremos que cada uno disfrute al máximo sin preocuparse por nada. Solo cuéntanos al confirmar tu asistencia y tendremos todo listo para ti con el mismo amor y cuidado que para el resto del menú."
       },
       "04": {
         "question": "¿Puedo llevar a alguien más con mi invitación?",
-        "answer": ""
+        "answer": "Nos encantaría poder recibir a todos, pero por temas de espacio y logística, la invitación es solo para ti. Tu presencia es más que suficiente y nos alegra mucho contar contigo ese día."
       },
       "05": {
         "question": "¿Habrá parqueadero disponible?",
-        "answer": ""
+        "answer": "Sí, les compartimos la información del parqueadero público más cercano: se encuentra en la Carrera 13A #28-38, en el mismo Parque Central Bavaria. El ingreso es hasta las 7:00 p.m. La tarifa plena es de $18.000 para carro y $12.000 para moto. El pago se realiza únicamente en efectivo. Queremos que disfruten desde el primer momento, sin afanes ni vueltas extra (pueden ver la ubicación aquí: https://goo.gl/maps/kmfoVjKkqkWV7KNW8)."
       },
       "06": {
         "question": "¿A qué hora empieza la ceremonia y cuánto durará?",
-        "answer": ""
+        "answer": "La ceremonia simbólica comenzará a las 5:30 p.m. y durará aproximadamente 30 minutos. Será un momento íntimo y muy significativo para nosotros, y nos emociona que puedan estar ahí desde el primer instante."
       },
       "07": {
         "question": "¿A qué hora debería llegar?",
-        "answer": ""
+        "answer": "Lo ideal es que lleguen entre 5:00 y 5:30 p.m. para que puedan ubicarse con calma y la ceremonia inicie puntualmente. Todo comienza en punto, y queremos que estén ahí desde el primer 'sí'."
       },
       "08": {
         "question": "¿Cuando es la fecha límite para confirmar asistencia?",
-        "answer": ""
+        "answer": "La fecha límite para confirmar asistencia es el 1 de junio, pero si puedes hacerlo antes, nos harías un gran favor. Cada detalle de este día está pensado con amor, y saber que estarás con nosotros nos ayuda a prepararlo todo con aún más ilusión."
       },
       "09": {
         "question": "¿Puedo tomar fotos durante la ceremonia?",
-        "answer": ""
+        "answer": "Queremos que vivan este momento con nosotros, que se queden con los detalles que no caben en una foto, con las risas, con la emoción. Por eso, les pedimos que nos regalen su presencia completa: los celulares pueden esperar, este instante no."
+      },
+      "10": {
+        "question": "¿Habrá música en vivo?",
+        "answer": "Sí, y no cualquier música: nos acompañará el solista José, quien hará parte de la atmósfera que queremos compartir con ustedes. La música será parte del alma de esta celebración."
       }
     }
   }
