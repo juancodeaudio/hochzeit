@@ -36,7 +36,7 @@ const itemVariants = {
 
 export const Accordion = () => {
   const t = useTranslations("QA.Accordion");
-  const questionIds = ["01", "02", "03", "04", "05", "06", "07", "08"];
+  const questionIds = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"];
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleAccordion = (index: number) => {

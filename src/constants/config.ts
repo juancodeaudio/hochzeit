@@ -15,16 +15,16 @@ export const siteMetadata = {
 };
 
 export const timelineYears: TimelineYear[] = [
-  { year: 2016, image: "/images/IMG_1890.jpeg", isVertical: false },
-  { year: 2017, image: "/images/IMG_1338.jpeg", isVertical: true },
-  { year: 2018, image: "/images/IMG_1890.jpeg", isVertical: false },
-  { year: 2019, image: "/images/IMG_1338.jpeg", isVertical: true },
-  { year: 2020, image: "/images/IMG_1890.jpeg", isVertical: false },
-  { year: 2021, image: "/images/IMG_1338.jpeg", isVertical: true },
-  { year: 2022, image: "/images/IMG_1890.jpeg", isVertical: false },
-  { year: 2023, image: "/images/IMG_1338.jpeg", isVertical: true },
-  { year: 2024, image: "/images/IMG_1890.jpeg", isVertical: false },
-  { year: 2025, image: "/images/IMG_1338.jpeg", isVertical: true },
+  { year: 2016, image: "/images/IMG_0000.jpeg", isVertical: true },
+  { year: 2017, image: "/images/IMG_0927.jpeg", isVertical: true },
+  { year: 2018, image: "/images/IMG_3238.jpeg", isVertical: false },
+  { year: 2019, image: "/images/IMG_3830.jpeg", isVertical: true },
+  { year: 2020, image: "/images/IMG_5208.jpeg", isVertical: false },
+  { year: 2021, image: "/images/IMG_6079.jpeg", isVertical: false },
+  { year: 2022, image: "/images/IMG_1905.jpeg", isVertical: true },
+  { year: 2023, image: "/images/IMG_3220.jpeg", isVertical: false },
+  { year: 2024, image: "/images/IMG_8113.jpeg", isVertical: true },
+  { year: 2025, image: "/images/IMG_0008.jpeg", isVertical: true },
 ];
 
 export const galleryImages1: GalleryImage[] = [
@@ -32,21 +32,21 @@ export const galleryImages1: GalleryImage[] = [
   { src: "/images/IMG_3192.jpeg", width: 350, start: 100, end: 0 },
   { src: "/images/IMG_0001.jpeg", width: 250, start: -150, end: 100 },
   { src: "/images/IMG_6826.jpeg", width: 400, start: 0, end: 0 },
-  { src: "/images/IMG_0000.jpeg", width: 300, start: 0, end: 50 },
+  { src: "/images/IMG_4899.jpeg", width: 300, start: 0, end: 50 },
   { src: "/images/IMG_9601.jpeg", width: 400, start: -70, end: 100 },
   { src: "/images/IMG_0246.jpeg", width: 325, start: 50, end: -50 },
   { src: "/images/IMG_8011.jpeg", width: 325, start: -50, end: 0 },
 ];
 
 export const galleryImages3: GalleryImage[] = [
-  { src: "/images/IMG_3264.jpeg", width: 400, start: 0, end: 0 },
-  { src: "/images/IMG_3192.jpeg", width: 350, start: 100, end: 0 },
-  { src: "/images/IMG_0001.jpeg", width: 250, start: -150, end: 100 },
-  { src: "/images/IMG_6826.jpeg", width: 400, start: 0, end: 0 },
-  { src: "/images/IMG_0000.jpeg", width: 300, start: 0, end: 50 },
-  { src: "/images/IMG_9601.jpeg", width: 400, start: -70, end: 100 },
-  { src: "/images/IMG_0246.jpeg", width: 325, start: 50, end: -50 },
-  { src: "/images/IMG_8011.jpeg", width: 325, start: -50, end: 0 },
+  { src: "/images/IMG_8204.jpeg", width: 400, start: 0, end: 0 },
+  { src: "/images/IMG_1461.jpeg", width: 350, start: 100, end: 0 },
+  { src: "/images/IMG_8462.jpeg", width: 250, start: -150, end: 100 },
+  { src: "/images/IMG_2231.jpeg", width: 400, start: 0, end: 0 },
+  { src: "/images/IMG_0007.jpeg", width: 300, start: 0, end: 50 },
+  { src: "/images/IMG_1185.jpeg", width: 400, start: -70, end: 100 },
+  { src: "/images/IMG_0005.jpeg", width: 325, start: 50, end: -50 },
+  { src: "/images/IMG_8068.jpeg", width: 325, start: -50, end: 0 },
 ];
 
 export const partyTimelineItems: PartyTimelineItem[] = [
