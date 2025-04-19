@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { motion } from "motion/react";
-import { NavbarButton } from "./NavbarButton";
+import { NavbarButton } from "../../common/NavbarButton/NavbarButton";
 import { NavbarContent } from "./NavbarContent";
 import { NavLink } from "app/constants/types";
 
