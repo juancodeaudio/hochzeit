@@ -1,15 +1,3 @@
-:root {
-  --color-navbar-open: #{$inverse-surface};
-  --color-navbar-closed: #{$surface};
-  --navbar-width-closed: 5vw;
-  --navbar-width-open: 100vw;
-
-  @include for-size(phone) {
-    --navbar-width-closed: 0vw;
-    --navbar-width-open: 100vw;
-  }
-}
-
 .navbar {
   position: fixed;
   top: 0;

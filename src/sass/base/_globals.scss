@@ -1,6 +1,26 @@
 @use '../abstracts/mixins' as *;
 @use '../abstracts/theme' as *;
 
+:root {
+  --logo-scale: 6;
+  --color-button-closed: #{$inverse-surface};
+  --color-button-open: #{$surface};
+
+  --color-navbar-open: #{$inverse-surface};
+  --color-navbar-closed: #{$surface};
+  --navbar-width-closed: 5vw;
+  --navbar-width-open: 100vw;
+
+  @include for-size(phone) {
+    --logo-scale: 5;
+    --color-button-closed: #{$surface};
+    --color-button-open: #{$surface};
+
+    --navbar-width-closed: 0vw;
+    --navbar-width-open: 100vw;
+  }
+}
+
 body {
   background-color: $surface;
   color: $on-surface;

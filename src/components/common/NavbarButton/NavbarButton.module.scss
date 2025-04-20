@@ -1,13 +1,3 @@
-:root {
-  --color-button-closed: #{$inverse-surface};
-  --color-button-open: #{$surface};
-
-  @include for-size(phone) {
-    --color-button-closed: #{$surface};
-    --color-button-open: #{$surface};
-  }
-}
-
 .navbar-button {
   cursor: pointer;
   width: 48px;

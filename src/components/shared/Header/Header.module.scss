@@ -1,11 +1,3 @@
-// Header.module.scss
-:root {
-  --logo-scale: 6;
-  @include for-size(phone) {    
-    --logo-scale: 5;
-  }
-}
-
 .header {
   position: fixed;
   top: 0;
