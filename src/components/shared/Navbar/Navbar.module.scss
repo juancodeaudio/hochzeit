@@ -56,13 +56,14 @@
     height: auto;
 
     @include for-size(phone) {
-      width: 300px;
+      width: 320px;
+      left: -15px;
     }
     &--vertical {
       width: 400px;
       aspect-ratio: 4/6;
       @include for-size(phone) {
-        width: 200px;
+        width: 250px;
       }
     }
   }
