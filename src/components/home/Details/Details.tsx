@@ -79,7 +79,7 @@ export const Details = () => {
       </div>
       <div className={styles["Details__callaction-container"]}>
         <h3>{t('callToAction')}</h3>
-        <Button label={t('rsvp')} href='https://www.google.com'></Button>
+        <Button label={t('rsvp')} href='https://www.icloud.com/invites/078qPOTqbDjynzo0WCFx18OAQ'></Button>
       </div>
     </section>
   );
