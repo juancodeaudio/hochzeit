@@ -1,13 +1,11 @@
-import { motion } from "motion/react";
+"use client";
 
+import { motion } from "motion/react";
+import { useNavbarContext } from "app/components/shared/Navbar/NavbarContext";
 import styles from "./NavbarButton.module.scss";
 
-type NavbarButtonProps = {
-  isOpen: boolean;
-  toggleNavbar: () => void;
-};
-
-export const NavbarButton = ({ isOpen, toggleNavbar }: NavbarButtonProps) => {
+export const NavbarButton = () => {
+  const { isOpen, toggleNavbar } = useNavbarContext();
   const button = {
     closed: { rotate: 0 },
     open: { rotate: 90 }

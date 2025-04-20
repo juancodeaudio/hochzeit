@@ -3,21 +3,15 @@
 import Image from "next/image";
 import { useState } from "react";
 import { motion } from "motion/react";
+import { useNavbarContext } from "./NavbarContext";
 import { NavbarButton } from "../../common/NavbarButton/NavbarButton";
 import { NavbarContent } from "./NavbarContent";
-import { NavLink } from "app/constants/types";
 
 import styles from "./Navbar.module.scss";
 
 export const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [hoveredOption, setHoveredOption] = useState<null | NavLink>(null);
+  const { isOpen, toggleNavbar, hoveredOption, setHoveredOption } = useNavbarContext();
   const [randomRotation, setRandomRotation] = useState(0);
-
-  const toggleNavbar = () => {
-    setHoveredOption(null);
-    setIsOpen(!isOpen);
-  };
 
   return (
     <motion.nav
@@ -28,7 +22,7 @@ export const Navbar = () => {
       }}
       transition={{ duration: 0.8, ease: [0.645, 0.045, 0.355, 1] }}
     >
-      <NavbarButton isOpen={isOpen} toggleNavbar={toggleNavbar} />
+      <NavbarButton />
       <div className={styles["navbar__container"]}>
         {isOpen && (
           <NavbarContent
