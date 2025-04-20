@@ -13,17 +13,17 @@
       width: 100vw;
       margin-block: 2rem;
       margin-left: 2rem;
-      font-size: 2rem;
+      @include font-size(20);
     }
   }
 
   &__item {
     margin: 1.5rem 0;
-    font-size: 3rem;
+    @include font-size(30);
 
     @include for-size(phone) {
       margin: 0.8rem 0;
-      font-size: 2rem;
+      @include font-size(20);
     }
   }
 

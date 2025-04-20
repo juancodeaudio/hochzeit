@@ -1,22 +1,20 @@
 .Button {
   text-decoration: none;
-  font-size: 30px;
+  @include font-size(20, 54);
   text-transform: uppercase;
   color: $primary;
   height: 90px;
   width: 220px;
   text-align: center;
-  line-height: 90px;
   transition: 0.5s;
   position: relative;
   overflow: hidden;
   cursor: pointer;
   border-radius: 20px;
   @include for-size(phone) {
-    font-size: 20px;
+    @include font-size(12, 42);
     height: 70px;
     width: 150px;
-    line-height: 70px;
   }
   span {
     position: absolute;

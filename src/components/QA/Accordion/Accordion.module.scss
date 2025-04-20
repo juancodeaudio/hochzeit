@@ -52,7 +52,7 @@
     padding-inline: 1rem;
     background: none;
     border: none;
-    font-size: 1.2rem;
+    @include font-size(12);
     font-weight: bold;
     text-align: left;
     display: flex;
@@ -70,7 +70,7 @@
   }
   
   &__icon {
-    font-size: 1.2rem;
+    @include font-size(12);
   }
   
   &__item-content {
@@ -85,7 +85,7 @@
       max-width: 600px;
       text-align: left;
       padding: 1rem 0;
-      font-size: 1rem;
+      @include font-size(10);
       line-height: 1.5;
     }
   }
