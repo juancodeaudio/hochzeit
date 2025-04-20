@@ -10,13 +10,13 @@
     width: 100%;
     transform: translate(-50%, -50%);
     font-family: var(--font-amsterdam-four);
+    text-align: center;
+    color: $on-surface;
+    z-index: 11;
     @include font-size(30, 50, 4);
     @include for-size(phone) {
       @include font-size(25, 35, 2);
     }
-    text-align: center;
-    color: $on-surface;
-    z-index: 11;
   }
   h3 {
     color: $on-surface;
