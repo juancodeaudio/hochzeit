@@ -8,7 +8,7 @@
   grid-template-rows: 1fr 3fr 1fr;
   grid-template-areas:
     "top    top    top"
-    "left   middle right"
+    "men    images women"
     "bottom bottom bottom";
   padding-bottom: 4rem;
   
@@ -33,9 +33,9 @@
     grid-template-rows: 60px 1fr 2fr 1fr 1fr;
     grid-template-areas:
       "top"
-      "left"
-      "middle"
-      "right"
+      "men"
+      "images"
+      "women"
       "bottom";
   }
 
@@ -45,7 +45,7 @@
   }
 
   &__images {
-    grid-area: middle;
+    grid-area: images;
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -78,11 +78,11 @@
     padding: 3rem;
 
     &--women {
-      grid-area: left;
+      grid-area: women;
     }
 
     &--men {
-      grid-area: right;
+      grid-area: men;
     }
 
     @include for-size(phone) {
