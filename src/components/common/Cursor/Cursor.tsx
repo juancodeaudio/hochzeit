@@ -66,8 +66,6 @@ export const Cursor = () => {
   }, [animate, scope]);
   
   return (
-    <div ref={scope} id='custom-cursor' className={styles["Cursor"]} style={{ opacity: 0, scale: 1, transform: 'translate(-100px, -100px)' }}>
-      <span className={styles["Cursor__text"]}>View</span>
-    </div>
+    <div ref={scope} id='custom-cursor' className={styles["Cursor"]} style={{ opacity: 0, scale: 1, transform: 'translate(-100px, -100px)' }}></div>
   );
 };

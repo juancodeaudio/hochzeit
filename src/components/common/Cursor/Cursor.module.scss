@@ -16,10 +16,4 @@
   @include for-size(phone) {
     display: none;
   }
-  &__text {
-    font-size: 5px;
-    font-weight: 900;
-    letter-spacing: 1px;
-    display: none;
-  }
 }
