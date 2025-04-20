@@ -8,11 +8,23 @@
     flex-direction: column;
     overflow: hidden;
     margin-left: 200px;
+
+    @include for-size(phone) {
+      width: 100vw;
+      margin-block: 2rem;
+      margin-left: 2rem;
+      font-size: 2rem;
+    }
   }
 
   &__item {
     margin: 1.5rem 0;
     font-size: 3rem;
+
+    @include for-size(phone) {
+      margin: 1rem 0;
+      font-size: 2rem;
+    }
   }
 
   &__link {

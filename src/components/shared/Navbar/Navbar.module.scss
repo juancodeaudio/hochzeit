@@ -33,19 +33,37 @@
     height: 85vh;
     display: grid;
     grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "content images";
     align-items: center;
     justify-items: center;
+
+    @include for-size(phone) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "images" "content";
+      height: 90vh;
+      margin-top: 10vh;
+    }
   }
 
   &__image-container {
+    grid-area: images;
     position: relative;
     pointer-events: none;
     aspect-ratio: 6/4;
     width: 600px;
     height: auto;
+
+    @include for-size(phone) {
+      width: 300px;
+    }
     &--vertical {
       width: 400px;
       aspect-ratio: 4/6;
+      @include for-size(phone) {
+        width: 200px;
+      }
     }
   }
 
