@@ -17,14 +17,14 @@ export const NavbarButton = () => {
       y: "-50%",
       scaleY: 0.7,
       rotate: 0,
-      backgroundColor: "#313030",
+      backgroundColor: "var(--color-button-closed)",
     }),
     open: (custom: number) => ({
       x: "-50%",
       y: "-50%",
       scaleY: 1,
       rotate: custom === 1 ? 315 : 45,
-      backgroundColor: "#FDF8F7",
+      backgroundColor: "var(--color-button-open)",
     })
   }
 
