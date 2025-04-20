@@ -55,6 +55,10 @@
     position: relative;
     overflow-x: hidden;
 
+    @include for-size(phone) {
+      overflow-y: hidden;
+    }
+
     .timeline-section__image {
       position: absolute;
     }
