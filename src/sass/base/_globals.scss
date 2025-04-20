@@ -7,6 +7,9 @@ body {
 }
 main {
   margin-left: 5vw;
+  @include for-size(phone) {
+    margin-left: 0;
+  }
 }
 
 h2 {
