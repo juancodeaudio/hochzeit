@@ -10,9 +10,9 @@ export const DressCode = () => {
   return (
     <section className={styles["DressCode"]}>
       <h2>{t('title')}</h2>
-      <div className={`${styles["DressCode__description"]} ${styles["DressCode__description--women"]}`}>
-        <h3>{t('women')}</h3>
-        <p>{t('womenDescription')}</p>
+      <div className={`${styles["DressCode__description"]} ${styles["DressCode__description--men"]}`}>
+        <h3>{t('men')}</h3>
+        <p>{t('menDescription')}</p>
       </div>
       <div className={styles["DressCode__images"]}>
         <Image
@@ -28,9 +28,9 @@ export const DressCode = () => {
           height={400}
         />
       </div>
-      <div className={`${styles["DressCode__description"]} ${styles["DressCode__description--men"]}`}>
-        <h3>{t('men')}</h3>
-        <p>{t('menDescription')}</p>
+      <div className={`${styles["DressCode__description"]} ${styles["DressCode__description--women"]}`}>
+        <h3>{t('women')}</h3>
+        <p>{t('womenDescription')}</p>
       </div>
       <div className={styles["DressCode__notes"]}>
         <h3>{t('colorPalette')}</h3>
