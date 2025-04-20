@@ -7,7 +7,6 @@ import { routing } from 'app/i18n/routing';
 import { Cursor } from 'app/components/common';
 import { NavbarProvider } from 'app/components/shared/Navbar/NavbarContext';
 import { Navbar, Header, Footer } from "app/components/shared";
-import { NavbarButton } from 'app/components/common/NavbarButton/NavbarButton';
 import "app/sass/main.scss";
 
 const amsterdamFour = localFont({
@@ -50,7 +49,6 @@ export default async function LocaleLayout({
           <Cursor />
           <NavbarProvider>
             <Navbar />
-            <NavbarButton />
           </NavbarProvider>
           <Header />
           {children}

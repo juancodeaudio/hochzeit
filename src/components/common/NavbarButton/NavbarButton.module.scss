@@ -18,10 +18,10 @@
 
   @include for-size(phone) {
     position: fixed;
-    top: 25px;
-    left: 25px;
-    width: 60px;
-    height: 60px;
+    top: 8px;
+    left: 32px;
+    width: 64px;
+    height: 64px;
     z-index: 1000;
     background-color: $inverse-surface;
     border-radius: 50%;
