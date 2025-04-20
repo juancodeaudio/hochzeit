@@ -51,11 +51,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; // Permitir que las imágenes se superpongan
+    position: relative;
     overflow-x: hidden;
 
     .timeline-section__image {
-      position: absolute; // Apilar imágenes una encima de otra
+      position: absolute;
     }
   }
   
@@ -80,6 +80,11 @@
     min-width: 100%;
     scroll-snap-align: start;
     padding-right: 20px;
+
+    @include for-size(phone) {
+      padding-inline: 20px;
+    }
+    
     .timeline-section__content {
       height: 100%;
       padding: 20px;
