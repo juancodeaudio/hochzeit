@@ -18,7 +18,7 @@ export const Navbar = () => {
       className={styles["navbar"]}
       animate={{
         width: isOpen ? "101vw" : "5vw",
-        backgroundColor: isOpen ? "#313030" : "#FEEEE4"
+        backgroundColor: isOpen ? "var(--color-navbar-open)" : "var(--color-navbar-closed)"
       }}
       transition={{ duration: 0.8, ease: [0.645, 0.045, 0.355, 1] }}
     >
