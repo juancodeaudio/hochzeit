@@ -124,10 +124,31 @@
           @include font-size(250);
         }
       }
+
+      &-icon--wrapper {
+        position: absolute;
+        top: 50%;
+
+        &--right {
+          right: 1rem;
+        }
+        &--left {
+          left: 1rem;
+        }
+      }
+
+      &-icon {
+        @include font-size(20);
+        color: $on-primary;
+        transform: translateY(-50%);
+      }
+
       .content {
+        width: 100%;
         position: relative;
         color: $on-primary;
         z-index: 1;
+        text-align: center;
       }
     }
   }

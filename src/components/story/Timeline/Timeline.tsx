@@ -3,6 +3,7 @@
 import { useRef, useState, useEffect, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
 import { motion, useTransform, MotionValue, animate, useScroll, useSpring } from 'motion/react';
+import { RxDoubleArrowRight, RxDoubleArrowLeft } from "react-icons/rx";
 import Image from 'next/image';
 import styles from './Timeline.module.scss';
 import { timelineYears } from 'app/constants/config';
@@ -168,7 +169,7 @@ export const Timeline = () => {
         ref={scrollContainerRef}
         className={styles["timeline__content-container"]}
       >
-        {years.map(({ year }) => (
+        {years.map(({ year }, index) => (
           <motion.div 
             key={year} 
             className={styles["timeline__section"]}
@@ -187,6 +188,26 @@ export const Timeline = () => {
               >
                 {isMobile ? String(year).slice(2) : year}
               </motion.h2>
+              {index !== 0 && (
+                <motion.div
+                  animate={{ x: [0, 5, 0], opacity: [0.6, 0.2, 0.6] }}
+                  transition={{ repeat: Infinity, duration: 1.2, ease: "easeInOut" }}
+                  style={{ opacity: 1 }}
+                  className={`${styles["timeline-section__content-icon--wrapper"]} ${styles["timeline-section__content-icon--wrapper--left"]}`}
+                >
+                  <RxDoubleArrowLeft className={styles["timeline-section__content-icon"]} />
+                </motion.div>
+              )}
+              {index !== years.length - 1 && (
+                <motion.div
+                  animate={{ x: [0, -5, 0], opacity: [0.6, 0.2, 0.6] }}
+                  transition={{ repeat: Infinity, duration: 1.2, ease: "easeInOut" }}
+                  style={{ opacity: 1 }}
+                  className={`${styles["timeline-section__content-icon--wrapper"]} ${styles["timeline-section__content-icon--wrapper--right"]}`}
+                >
+                  <RxDoubleArrowRight className={styles["timeline-section__content-icon"]} />
+                </motion.div>
+              )}
               <motion.div 
                 className={styles["content"]}
                 initial={{ y: 20 }}
