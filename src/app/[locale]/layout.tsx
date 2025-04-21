@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import localFont from 'next/font/local'
 import { Montserrat } from "next/font/google";
 import { routing } from 'app/i18n/routing';
+import LenisProvider from 'app/components/providers/LenisProvider';
 import { Cursor } from 'app/components/common';
 import { NavbarProvider } from 'app/components/shared/Navbar/NavbarContext';
 import { Navbar, Header, Footer } from "app/components/shared";
@@ -45,15 +46,17 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body className={`${montserrat.className} ${amsterdamFour.variable} ${atteron.variable}`}>
-        <NextIntlClientProvider>  
-          <Cursor />
-          <NavbarProvider>
-            <Navbar />
-          </NavbarProvider>
-          <Header />
-          {children}
-          <Footer />
-        </NextIntlClientProvider>
+        <LenisProvider>
+          <NextIntlClientProvider>  
+            <Cursor />
+            <NavbarProvider>
+              <Navbar />
+            </NavbarProvider>
+            <Header />
+            {children}
+            <Footer />
+          </NextIntlClientProvider>
+        </LenisProvider>
       </body>
     </html>
   );
