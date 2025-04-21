@@ -2,7 +2,7 @@
 
 import { motion } from 'motion/react';
 import styles from './Palette.module.scss';
-import Logo from 'public/vectors/logo.svg';
+import { Logo } from 'app/components/common';
 import { Color } from "app/constants/types";
 
 interface PaletteProps {
