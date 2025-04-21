@@ -130,5 +130,12 @@
         "answer": "Sí, y no cualquier música: nos acompañará el solista José, quien hará parte de la atmósfera que queremos compartir con ustedes. La música será parte del alma de esta celebración."
       }
     }
+  },
+  "Footer": {
+    "title": "C&JP",
+    "copyright": "© 2025 Camila & Juan Pablo",
+    "navigation": "Navegación",
+    "linksTitle": "Enlaces",
+    "Confirm": "Confirmar Asistencia"
   }
 }

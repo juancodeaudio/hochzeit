@@ -1,4 +1,4 @@
-import { Color, NavLink, TimelineYear, GalleryImage, PartyTimelineItem } from "app/constants/types";
+import { Color, NavLink, FooterLink, TimelineYear, GalleryImage, PartyTimelineItem } from "app/constants/types";
 
 export const navLinks: NavLink[] = [
   { href: "/", label: "Home", image: "/images/IMG_1890.jpeg" },
@@ -6,6 +6,10 @@ export const navLinks: NavLink[] = [
   { href: "/gallery", label: "Gallery", image: "/images/IMG_5106.jpeg", isVertical: true },
   { href: "/party", label: "Party", image: "/images/IMG_7580.jpeg", isVertical: true },
   { href: "/QA", label: "QA", image: "/images/IMG_1294.jpeg" },
+];
+
+export const footerLinks: FooterLink[] = [
+  { href: "https://www.icloud.com/invites/078qPOTqbDjynzo0WCFx18OAQ", label: "Confirm" }
 ];
 
 export const siteMetadata = {

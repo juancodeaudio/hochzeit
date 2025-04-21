@@ -11,6 +11,11 @@ export interface NavLink {
   isVertical?: boolean;
 }
 
+export interface FooterLink {
+  href: string;
+  label: string;
+}
+
 export interface TimelineYear {
   year: number;
   image: string;
