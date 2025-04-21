@@ -66,7 +66,9 @@ export const paletteColors: Color[] = [
   { name: 'Black Bean', hex: '#401107', fontColor: '#EADCD6' },
   { name: 'Seal Brown', hex: '#702609', fontColor: '#EADCD6' },
   { name: 'Beaver', hex: '#B88672', fontColor: '#401107' },
-  { name: 'Champagne Pink', hex: '#EADCD6', fontColor: '#B88672' },
   { name: 'Dark Moss Green', hex: '#3D441E', fontColor: '#D9D4C1' },
   { name: 'Bone', hex: '#D9D4C1', fontColor: '#3D441E' },
+  { name: 'Sapphire Shadow', hex: '#2b3b6b', fontColor: '#EADCD6' },
+  { name: 'Charcoal Grey', hex: '#545454', fontColor: '#EADCD6' },
+  { name: 'Black', hex: '#000000', fontColor: '#ffffff' },
 ];
