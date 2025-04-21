@@ -44,12 +44,14 @@ export const GalleryParallax = ({ images, titleKey }: GalleryParallaxProps) => {
   ), [plane1X, plane1Y, plane2X, plane2Y, plane3X, plane3Y]);
 
   const handleMouseMove = useCallback((e: React.MouseEvent) => {
-    const { clientX, clientY } = e;
-    const { innerWidth, innerHeight } = window;
-    const centerX = (clientX - innerWidth / 2) / innerWidth;
-    const centerY = (clientY - innerHeight / 2) / innerHeight;
-    x.set(centerX * 100);
-    y.set(centerY * 100);
+    requestAnimationFrame(() => {
+      const { clientX, clientY } = e;
+      const { innerWidth, innerHeight } = window;
+      const centerX = (clientX - innerWidth / 2) / innerWidth;
+      const centerY = (clientY - innerHeight / 2) / innerHeight;
+      x.set(centerX * 100);
+      y.set(centerY * 100);
+    });
   }, [x, y]);
 
   const layers = useMemo(() => {
