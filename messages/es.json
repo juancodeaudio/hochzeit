@@ -79,9 +79,9 @@
     "DressCode": {
       "title": "Código de Vestimenta",
       "men": "Hombres",
-      "menDescription": "Traje con corbata. Se reserva el color verde, blanco o similares y el uso de chaleco",
+      "menDescription": "Traje con corbata. Se reserva el color verde, blanco o similares para el traje y el uso de chaleco",
       "women": "Mujeres",
-      "womenDescription": "Vestido largo, cóctel o midi (se reserva el color blanco o similares)",
+      "womenDescription": "Vestido largo, cóctel o midi. Se reserva el color blanco o similares.",
       "colorPalette": "Sigue la paleta de colores",
       "shoesReminder": "¡No olvides traer tenis o zapatos de cambio para poder bailar toda la noche!"
     }
