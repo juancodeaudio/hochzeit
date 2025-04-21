@@ -32,25 +32,25 @@ export const timelineYears: TimelineYear[] = [
 ];
 
 export const galleryImages1: GalleryImage[] = [
-  { src: "/images/IMG_3264.jpeg", width: 400, start: 0, end: 0 },
-  { src: "/images/IMG_3192.jpeg", width: 350, start: 100, end: 0 },
-  { src: "/images/IMG_0001.jpeg", width: 250, start: -150, end: 100 },
-  { src: "/images/IMG_6826.jpeg", width: 400, start: 0, end: 0 },
-  { src: "/images/IMG_4899.jpeg", width: 300, start: 0, end: 50 },
-  { src: "/images/IMG_9601.jpeg", width: 400, start: -70, end: 100 },
-  { src: "/images/IMG_0246.jpeg", width: 325, start: 50, end: -50 },
-  { src: "/images/IMG_8011.jpeg", width: 325, start: -50, end: 0 },
+  { src: "/images/IMG_3264.jpeg", width: 400, start: 0, end: 0, rotation: 5 },
+  { src: "/images/IMG_3192.jpeg", width: 350, start: 100, end: 0, rotation: 4 },
+  { src: "/images/IMG_0001.jpeg", width: 250, start: -150, end: 100, rotation: 1 },
+  { src: "/images/IMG_6826.jpeg", width: 400, start: 0, end: 0, rotation: -3 },
+  { src: "/images/IMG_4899.jpeg", width: 300, start: 0, end: 50, rotation: -1 },
+  { src: "/images/IMG_9601.jpeg", width: 400, start: -70, end: 100, rotation: -2 },
+  { src: "/images/IMG_0246.jpeg", width: 325, start: 50, end: -50, rotation: -6 },
+  { src: "/images/IMG_8011.jpeg", width: 325, start: -50, end: 0, rotation: 2 },
 ];
 
 export const galleryImages3: GalleryImage[] = [
-  { src: "/images/IMG_8204.jpeg", width: 400, start: 0, end: 0 },
-  { src: "/images/IMG_1461.jpeg", width: 350, start: 100, end: 0 },
-  { src: "/images/IMG_8462.jpeg", width: 250, start: -150, end: 100 },
-  { src: "/images/IMG_2231.jpeg", width: 400, start: 0, end: 0 },
-  { src: "/images/IMG_0007.jpeg", width: 300, start: 0, end: 50 },
-  { src: "/images/IMG_1185.jpeg", width: 400, start: -70, end: 100 },
-  { src: "/images/IMG_0005.jpeg", width: 325, start: 50, end: -50 },
-  { src: "/images/IMG_8068.jpeg", width: 325, start: -50, end: 0 },
+  { src: "/images/IMG_8204.jpeg", width: 400, start: 0, end: 0, rotation: -2 },
+  { src: "/images/IMG_1461.jpeg", width: 350, start: 100, end: 0, rotation: 1 },
+  { src: "/images/IMG_8462.jpeg", width: 250, start: -150, end: 100, rotation: 4 },
+  { src: "/images/IMG_2231.jpeg", width: 400, start: 0, end: 0, rotation: -3 },
+  { src: "/images/IMG_0007.jpeg", width: 300, start: 0, end: 50, rotation: -1 },
+  { src: "/images/IMG_1185.jpeg", width: 400, start: -70, end: 100, rotation: 5 },
+  { src: "/images/IMG_0005.jpeg", width: 325, start: 50, end: -50, rotation: 3 },
+  { src: "/images/IMG_8068.jpeg", width: 325, start: -50, end: 0, rotation: 5 },
 ];
 
 export const partyTimelineItems: PartyTimelineItem[] = [

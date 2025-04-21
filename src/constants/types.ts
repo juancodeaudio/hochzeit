@@ -27,6 +27,7 @@ export interface GalleryImage {
   width: number;
   start: number;
   end: number;
+  rotation?: number;
 }
 
 export interface PartyTimelineItem {
