@@ -102,7 +102,7 @@ const ParallaxImg = ({ className, alt, src, width, start, end }: ParallaxImgProp
       className={className}
       style={{
         opacity: useTransform(scrollYProgress, [0.75, 1], [1, 0]),
-        scale: useTransform(scrollYProgress, [0.75, 1], [1, 0.85]),
+        // scale: useTransform(scrollYProgress, [0.75, 1], [1, 0.85]),
         y: useTransform(scrollYProgress, [0, 1], [start, end]),
         rotate: rotation
       }}
