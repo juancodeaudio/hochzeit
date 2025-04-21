@@ -99,6 +99,7 @@ const ParallaxImg = ({ className, alt, src, width, start, end, rotation }: Paral
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: [`${start}px end`, `end ${end}px`] });
   const rotationValue = rotation ?? 0;
+  const isMainImage = start <= 0 && end >= 0;
 
   return (
     <motion.div
@@ -110,7 +111,15 @@ const ParallaxImg = ({ className, alt, src, width, start, end, rotation }: Paral
         rotate: rotationValue
       }}
     >
-      <Image src={src} alt={alt} width={width} height={100} style={{ width, height: 'auto' }} />
+      <Image
+        src={src}
+        alt={alt}
+        width={width}
+        height={100}
+        style={{ width, height: 'auto' }}
+        priority={isMainImage}
+        sizes="(max-width: 768px) 100vw, 50vw"
+      />
     </motion.div>
   );
 };
