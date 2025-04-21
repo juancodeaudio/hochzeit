@@ -8,11 +8,14 @@
   padding: 0.5rem 2rem;
   gap: 1rem;
   z-index: 10;
+  height: 80px;
 
   @include for-size(phone) {
     padding: 0.5rem 1rem;
   }
   select {
+    position: absolute;
+    right: 6rem;
     padding: 0.5rem;
     border-radius: 8px;
     border: 1px solid gray;
@@ -21,7 +24,6 @@
   &__logo {
     width: 4rem;
     height: 4rem;
-    transition: width 0.3s ease-out;
     svg {
       filter: saturate(0.6);
     }

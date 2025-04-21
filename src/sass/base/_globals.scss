@@ -2,7 +2,7 @@
 @use '../abstracts/theme' as *;
 
 :root {
-  --logo-scale: 6;
+  --logo-scale: 24rem;
   --color-button-closed: #{$inverse-surface};
   --color-button-open: #{$surface};
 
@@ -12,7 +12,7 @@
   --navbar-width-open: 100vw;
 
   @include for-size(phone) {
-    --logo-scale: 5;
+    --logo-scale: 20rem;
     --color-button-closed: #{$surface};
     --color-button-open: #{$surface};
 

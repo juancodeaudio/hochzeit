@@ -24,11 +24,12 @@ export const Header = () => {
 
   const variants = {
     initial: {
-      scale: "var(--logo-scale)",
+      width: "var(--logo-scale)",
+      height: "var(--logo-scale)",
       x: "calc(-47.5vw + 50%)",
       y: "45vh"
     },
-    scrolled: { scale: 1, x: "0", y: "0vh" },
+    scrolled: { width: "4rem", height: "4rem", x: "0", y: "0vh" },
   };
 
   return (
