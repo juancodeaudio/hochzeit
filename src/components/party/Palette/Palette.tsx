@@ -33,7 +33,7 @@ const itemVariants = {
   },
 };
 
-export const Palette = ({ colors }: PaletteProps) => {
+const Palette = ({ colors }: PaletteProps) => {
   return (
     <motion.section
       className={styles['Palette']}
@@ -70,3 +70,5 @@ export const Palette = ({ colors }: PaletteProps) => {
     </motion.section>
   )
 }
+
+export default Palette;
