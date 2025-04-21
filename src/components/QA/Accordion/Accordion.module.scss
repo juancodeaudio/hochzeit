@@ -94,6 +94,10 @@
       @include font-size(10);
       line-height: 1.5;
       color: $on-surface;
+
+      @include for-size(phone) {
+        width: 100%;
+      }
     }
   }
 }

@@ -79,7 +79,7 @@ export const Accordion = () => {
                 <motion.div
                   className={styles["Accordion__item-content"]}
                   initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: "20vh", opacity: 1 }}
+                  animate={{ height: "auto", opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.5, ease: [0.645, 0.045, 0.355, 1] }}
                 >
