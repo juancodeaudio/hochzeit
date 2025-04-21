@@ -13,14 +13,6 @@
   @include for-size(phone) {
     padding: 0.5rem 1rem;
   }
-  select {
-    position: absolute;
-    right: 6rem;
-    padding: 0.5rem;
-    border-radius: 8px;
-    border: 1px solid gray;
-    margin-left: 1rem;
-  }
   &__logo {
     width: 4rem;
     height: 4rem;
