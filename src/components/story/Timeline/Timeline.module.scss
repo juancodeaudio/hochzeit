@@ -8,8 +8,8 @@
   height: 98vh;
   margin-top: 2vh;
   @include for-size(phone) {
-    height: 90vh;
-    margin-top: 10vh;
+    height: 90svh;
+    margin-top: 10svh;
     grid-template-areas:
       "years-list"
       "images-container"
@@ -61,6 +61,20 @@
 
     .timeline-section__image {
       position: absolute;
+      aspect-ratio: 6/5;
+      width: 600px;
+      height: auto;
+
+      @include for-size(phone) {
+        width: 280px;
+      }
+      &--vertical {
+        width: 400px;
+        aspect-ratio: 5/6;
+        @include for-size(phone) {
+          width: 200px;
+        }
+      }
     }
   }
   

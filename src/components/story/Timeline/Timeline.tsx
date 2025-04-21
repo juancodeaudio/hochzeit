@@ -135,7 +135,7 @@ export const Timeline = () => {
         {years.map(({ year, image, isVertical }, index) => (
           <motion.div
             key={year}
-            className={styles["timeline-section__image"]}
+            className={`${styles["timeline-section__image"]} ${isVertical ? styles["timeline-section__image--vertical"] : ""}`}
             initial={{ x: "100%", opacity: 0 }}
             animate={{
               x: years.findIndex(y => y.year === activeYear) >= index ? 0 : "100%",
@@ -147,8 +147,7 @@ export const Timeline = () => {
             <Image 
               src={image} 
               alt={`Imagen del año ${year}`} 
-              width={!isVertical ? 400 : 300} 
-              height={!isVertical ? 300 : 400}
+              fill
             />
           </motion.div>
         ))}
