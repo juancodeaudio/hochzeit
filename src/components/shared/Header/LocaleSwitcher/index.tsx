@@ -71,6 +71,7 @@ export const LocaleSwitcher = () => {
             cursor: "pointer",
             fontFamily: "var(--font-atteron)",
             fontSize: "1.1rem",
+            fontWeight: "bold",
             "&:active": {
               backgroundColor: "#FEEEE4",
             },
@@ -80,6 +81,7 @@ export const LocaleSwitcher = () => {
             color: "#702609",
             fontFamily: "var(--font-atteron)",
             fontSize: "1.1rem",
+            fontWeight: "bold",
           }),
           dropdownIndicator: (baseStyles) => ({
             ...baseStyles,
