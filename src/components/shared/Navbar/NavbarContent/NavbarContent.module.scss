@@ -22,8 +22,9 @@
     @include font-size(30);
 
     @include for-size(phone) {
-      margin: 0.6rem 0;
-      @include font-size(20);
+      margin: 0.4rem 0;
+      @include font-size(15);
+      // font-size: 1.5rem;
     }
   }
 
