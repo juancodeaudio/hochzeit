@@ -27,9 +27,9 @@ export const Header = () => {
       width: "var(--logo-scale)",
       height: "var(--logo-scale)",
       x: "calc(-47.5vw + 50%)",
-      y: "45vh"
+      y: "45svh"
     },
-    scrolled: { width: "4rem", height: "4rem", x: "0", y: "0vh" },
+    scrolled: { width: "4rem", height: "4rem", x: "0", y: "0svh" },
   };
 
   return (
