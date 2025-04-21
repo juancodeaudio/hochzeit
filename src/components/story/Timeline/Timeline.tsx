@@ -50,6 +50,17 @@ export const Timeline = () => {
   const [activeYear, setActiveYear] = useState<(typeof years)[number]['year']>(years[0].year);
   const [isAnimatingOut, setIsAnimatingOut] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const { scrollXProgress } = useScroll({
     container: scrollContainerRef,
@@ -174,7 +185,7 @@ export const Timeline = () => {
                 animate={{ y: "-50%" }}
                 transition={{ delay: 0.1 }}
               >
-                {year}
+                {isMobile ? String(year).slice(2) : year}
               </motion.h2>
               <motion.div 
                 className={styles["content"]}

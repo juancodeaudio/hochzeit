@@ -117,8 +117,12 @@
         left: 0;
         color: $on-primary;
         opacity: 0.15;
-        @include font-size(140);
         margin: 0;
+        @include font-size(140);
+
+        @include for-size(phone) {
+          @include font-size(250);
+        }
       }
       .content {
         position: relative;
