@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { PageTitle } from "app/components/common";
-// import { PartyTimeline, Palette, DressCode } from "app/components/party";
+import { PartyTimeline } from "app/components/party";
 // import { paletteColors } from "app/constants/config";
 
 export default function Party() {
@@ -9,8 +9,8 @@ export default function Party() {
   return (
     <main>
       <PageTitle title={t('title')} size="medium" />
-      {/* <PartyTimeline />
-      <Palette colors={paletteColors} />
+      <PartyTimeline />
+      {/* <Palette colors={paletteColors} />
       <DressCode /> */}
     </main>
   );
