@@ -100,4 +100,14 @@
       }
     }
   }
+
+  &__item-link {
+    text-decoration: none;
+    color: $secondary;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

@@ -84,7 +84,19 @@ export const Accordion = () => {
                   transition={{ duration: 0.5, ease: [0.645, 0.045, 0.355, 1] }}
                 >
                   <p>
-                    {t(`${id}.answer`)}
+                    {t.rich(`${id}.answer`, {
+                      br: () => <br />,
+                      a: (children) => (
+                        <a
+                          href={children?.toString()}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={styles["Accordion__item-link"]}
+                        >
+                          {children}
+                        </a>
+                      ),
+                    })}
                   </p>
                 </motion.div>
               )}
