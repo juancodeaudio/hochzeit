@@ -4,24 +4,140 @@
     "Story": "Our Story",
     "Gallery": "Gallery",
     "Party": "About the Party",
-    "QA": "Q&A"
+    "QA": "Questions and<br></br>Answers"
   },
   "Home": {
     "Hero": {
-      "title": "Camila & Juan Pablo"
+      "title": "Camila & JuanPablo",
+      "welcome": "We're excited to celebrate this moment surrounded by those who have made our story more beautiful.",
+      "quote": "...We’ve done everything together, and I only know one way to measure time: with you and without you.",
+      "quoteAuthor": "Roberto Benigni"
+    },
+    "ParallaxBlock": {
+      "phrase": "It's amazing how one day someone walks into your life, and suddenly you can't remember how you lived without them.",
+      "subtitle": "There are parts of me that only exist when I'm with you."
+    },
+    "Details": {
+      "when": "When?",
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds",
+      "callToAction": "Join us!",
+      "rsvp": "I'm coming!"
     }
   },
   "Story": {
     "title": "Our Story",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies."
+    "Timeline": {
+      "2016": "And when you come close, my engine speeds up. I get feverish, I turn to fire and burn again... - Zoé",
+      "2017": "We were walking without looking for each other, but knowing we were walking to find each other. - Julio Cortázar",
+      "2018": "Being where I can be",
+      "2019": "I love you without knowing how, or when, or from where.<br></br>I love you straightforwardly without problems or pride:<br></br>I love you this way because I don’t know any other way to love.<br></br>- Pablo Neruda",
+      "2020": "And we arrived just in time; to meet and fall in love; to build an unbreakable love; to embrace each other's souls in storms; to be accomplices in our dreams; to be for one another, because our hearts are destined to connect and stay that way for life. - Anonymous",
+      "2021": "In which hug did we become eternal? In which kiss did we decide never to let go?",
+      "2022": "I love your eyes.<br></br>I love the mysterious coffee they wear.<br></br>I love the silence they show.<br></br>I love the peace reflected<br></br>in mine<br></br>being yours.<br></br>I love you.<br></br>- Marc Cortez",
+      "2023": "When you realize you want to spend the rest of your life with someone, you want the rest of your life to start as soon as possible. - When Harry Met Sally",
+      "2024": "I know I loved you before I knew it. As if my soul didn’t need to meet you to give love your name... - Lucas Hugo Guerra",
+      "2025": "After you I’m no longer who I was,<br></br>I look different inside and out.<br></br>If someone found me on the road<br></br>they surely wouldn’t recognize me.<br></br>After you I’m no longer so lost<br></br>I no longer feel alone when I’m with myself.<br></br>I like you a lot<br></br>and I like myself a lot more<br></br>since I’m with you. - Camilo"
+    }
   },
   "Gallery": {
-    "title": "Gallery"
+    "memories": "Our<br></br>Memories...",
+    "time": "...Our<br></br>Time...",
+    "quote": "...it was what they call love at first sight. Actually, at last sight. Actually, at eternal sight.",
+    "quoteAuthor": "Roberto Benigni"
   },
   "Party": {
-    "title": "About the Party"
+    "title": "About the Party",
+    "PartyTimeline": {
+      "ceremony": {
+        "hour": "5:30 PM",
+        "title": "Ceremony"
+      },
+      "pictures": {
+        "hour": "6:00 PM",
+        "title": "Photos"
+      },
+      "dinner": {
+        "hour": "7:00 PM",
+        "title": "Dinner & Toast"
+      },
+      "dance": {
+        "hour": "8:00 PM",
+        "title": "First Dance"
+      },
+      "party": {
+        "hour": "8:00 PM",
+        "title": "Party"
+      },
+      "end": {
+        "hour": "12:00 AM",
+        "title": "End of Event"
+      }
+    },
+    "DressCode": {
+      "title": "Dress Code",
+      "men": "Men",
+      "menDescription": "Suit with tie. Please avoid green, white or similar colors for the suit and the use of a vest.",
+      "women": "Women",
+      "womenDescription": "Long, cocktail, or midi dress. Please avoid white or similar colors.",
+      "colorPalette": "Follow the color palette",
+      "shoesReminder": "Don’t forget to bring sneakers or a change of shoes to dance all night long!",
+      "gifts": "Envelope Shower",
+      "giftsDescription": "Today we begin the most important journey of our lives: building our home, our dreams, our story. If you’d like to join us in that beginning too, an envelope shower will be a gesture we will carry in our hearts forever. Thank you for being part of what we are sowing today, to harvest tomorrow."
+    }
   },
   "QA": {
-    "title": "Questions and Answers"
+    "title": "Questions and Answers",
+    "Accordion": {
+      "01": {
+        "question": "When and where is the wedding?",
+        "answer": "The date is August 9, 2025, at Bitecca e Vino, in Bogotá. That day we want to share a piece of our story with you, between toasts, hugs, and a lot of joy. We’re so happy you'll be with us!"
+      },
+      "02": {
+        "question": "Is there a dress code?",
+        "answer": "Yes, and we want you to feel part of the celebration through the colors and style. For men: suit and tie, avoiding green, white or similar colors, and no vest. For women: long, cocktail, or midi dress, avoiding white or similar colors, and following the color palette found in the 'About the Party' section."
+      },
+      "03": {
+        "question": "Is there a vegetarian menu option?",
+        "answer": "Yes, of course. We want everyone to enjoy without any worries. Just let us know when confirming your attendance and we’ll have everything ready with the same love and care as the rest of the menu."
+      },
+      "04": {
+        "question": "Can I bring someone with my invitation?",
+        "answer": "We’d love to host everyone, but due to space and logistics, the invitation is just for you. Your presence alone means the world to us."
+      },
+      "05": {
+        "question": "Will there be parking available?",
+        "answer": "Yes, we’re sharing the info for the nearest public parking: located at Carrera 13A #28-38, inside Parque Central Bavaria. Entry is allowed until 7:00 p.m. Full rate is $18,000 for cars and $12,000 for motorcycles. Payment is cash only. We want you to enjoy from the very beginning, without stress (see the location here: https://goo.gl/maps/kmfoVjKkqkWV7KNW8)."
+      },
+      "06": {
+        "question": "What time does the ceremony start and how long will it last?",
+        "answer": "The symbolic ceremony will begin at 5:30 p.m. and last around 30 minutes. It will be an intimate and meaningful moment for us, and we’re excited for you to be there from the start."
+      },
+      "07": {
+        "question": "What time should I arrive?",
+        "answer": "Ideally between 5:00 and 5:30 p.m., so you can settle in and the ceremony can start on time. Everything begins right on schedule, and we want you there from the very first 'yes'."
+      },
+      "08": {
+        "question": "When is the RSVP deadline?",
+        "answer": "The deadline to confirm attendance is June 1st, but if you can do it earlier, that would be a big help. Every detail of this day is prepared with love, and knowing you'll be there helps us prepare it with even more excitement."
+      },
+      "09": {
+        "question": "Can I take photos during the ceremony?",
+        "answer": "We want you to experience this moment with us, to keep the details that don’t fit in a picture — the laughs, the emotion. That’s why we ask for your full presence: phones can wait, this moment cannot."
+      },
+      "10": {
+        "question": "Will there be live music?",
+        "answer": "Yes — and not just any music: the soloist José will be joining us, helping create the atmosphere we want to share with you. Music will be part of the soul of this celebration."
+      }
+    }
+  },
+  "Footer": {
+    "title": "C&JP",
+    "copyright": "© 2025 Camila & Juan Pablo",
+    "navigation": "Navigation",
+    "linksTitle": "Links",
+    "Confirm": "RSVP"
   }
 }

@@ -1,27 +1,143 @@
 {
   "Navbar": {
-    "Home": "Inicio",
-    "Story": "Nuestra Historia",
-    "Gallery": "Galería",
-    "Party": "Sobre la Fiesta",
-    "QA": "Preguntas y Respuestas"
+    "Home": "Startseite",
+    "Story": "Unsere Geschichte",
+    "Gallery": "Galerie",
+    "Party": "Über die Feier",
+    "QA": "Fragen und<br></br>Antworten"
   },
   "Home": {
     "Hero": {
-      "title": "Camila y Juan Pablo"
+      "title": "Camila & JuanPablo",
+      "welcome": "Wir freuen uns, diesen Moment mit denen zu feiern, die unsere Geschichte schöner gemacht haben.",
+      "quote": "...Wir haben alles gemeinsam gemacht, und ich kenne nur eine Art, die Zeit zu messen: mit dir und ohne dich.",
+      "quoteAuthor": "Roberto Benigni"
+    },
+    "ParallaxBlock": {
+      "phrase": "Es ist erstaunlich, wie jemand eines Tages in dein Leben tritt, und plötzlich kannst du dir nicht mehr vorstellen, wie du vorher gelebt hast.",
+      "subtitle": "Es gibt Teile von mir, die nur existieren, wenn ich bei dir bin."
+    },
+    "Details": {
+      "when": "Wann?",
+      "days": "Tage",
+      "hours": "Stunden",
+      "minutes": "Minuten",
+      "seconds": "Sekunden",
+      "callToAction": "Sei dabei!",
+      "rsvp": "Ich komme!"
     }
   },
   "Story": {
-    "title": "Nuestra Historia",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies."
+    "title": "Unsere Geschichte",
+    "Timeline": {
+      "2016": "Und wenn du näher kommst, beschleunigt sich mein Motor. Ich bekomme Fieber, ich werde zu Feuer und brenne erneut... - Zoé",
+      "2017": "Wir liefen herum, ohne uns zu suchen, aber in dem Wissen, dass wir uns finden würden. - Julio Cortázar",
+      "2018": "Da zu sein, wo ich sein kann",
+      "2019": "Ich liebe dich, ohne zu wissen wie, oder wann, oder woher.<br></br>Ich liebe dich schlicht, ohne Probleme oder Stolz:<br></br>Ich liebe dich auf diese Weise, weil ich keine andere Art kenne zu lieben.<br></br>- Pablo Neruda",
+      "2020": "Und wir kamen genau rechtzeitig; um uns zu treffen und zu verlieben; um eine unzerbrechliche Liebe aufzubauen; um unsere Seelen im Sturm zu umarmen; um Komplizen unserer Träume zu sein; füreinander da zu sein, denn unsere Herzen sind bestimmt, sich zu verbinden und für immer so zu bleiben. - Anonym",
+      "2021": "In welcher Umarmung wurden wir ewig? In welchem Kuss beschlossen wir, uns nie wieder loszulassen?",
+      "2022": "Ich liebe deine Augen.<br></br>Ich liebe den geheimnisvollen Kaffee, den sie tragen.<br></br>Ich liebe die Stille, die sie zeigen.<br></br>Ich liebe den Frieden, der sich<br></br>in meinen<br></br>spiegelt, weil sie deine sind.<br></br>Ich liebe dich.<br></br>- Marc Cortez",
+      "2023": "Wenn du erkennst, dass du den Rest deines Lebens mit jemandem verbringen willst, willst du, dass der Rest deines Lebens so schnell wie möglich beginnt. - Harry und Sally",
+      "2024": "Ich weiß, dass ich dich geliebt habe, bevor ich es wusste. Als ob meine Seele dich nicht treffen musste, um der Liebe deinen Namen zu geben... - Lucas Hugo Guerra",
+      "2025": "Nach dir bin ich nicht mehr der, der ich war,<br></br>ich sehe innen und außen anders aus.<br></br>Wenn mich jemand auf der Straße finden würde,<br></br>würde er mich sicher nicht erkennen.<br></br>Nach dir bin ich nicht mehr so verloren,<br></br>ich fühle mich nicht mehr allein, wenn ich bei mir bin.<br></br>Ich mag dich sehr<br></br>und ich mag mich selbst viel mehr,<br></br>seit ich bei dir bin."
+    }
   },
   "Gallery": {
-    "title": "Galería"
+    "memories": "Unsere<br></br>Erinnerungen...",
+    "time": "...Unsere<br></br>Zeit...",
+    "quote": "...es war, was man Liebe auf den ersten Blick nennt. Eigentlich auf den letzten Blick. Eigentlich auf den ewigen Blick.",
+    "quoteAuthor": "Roberto Benigni"
   },
   "Party": {
-    "title": "Sobre la Fiesta"
+    "title": "Über die Feier",
+    "PartyTimeline": {
+      "ceremony": {
+        "hour": "17:30 Uhr",
+        "title": "Zeremonie"
+      },
+      "pictures": {
+        "hour": "18:00 Uhr",
+        "title": "Fotos"
+      },
+      "dinner": {
+        "hour": "19:00 Uhr",
+        "title": "Abendessen & Toast"
+      },
+      "dance": {
+        "hour": "20:00 Uhr",
+        "title": "Erster Tanz"
+      },
+      "party": {
+        "hour": "20:00 Uhr",
+        "title": "Party"
+      },
+      "end": {
+        "hour": "00:00 Uhr",
+        "title": "Ende der Veranstaltung"
+      }
+    },
+    "DressCode": {
+      "title": "Dresscode",
+      "men": "Männer",
+      "menDescription": "Anzug mit Krawatte. Bitte vermeidet Grün, Weiß oder ähnliche Farben sowie Westen.",
+      "women": "Frauen",
+      "womenDescription": "Langes, Cocktail- oder Midikleid. Bitte vermeidet Weiß oder ähnliche Farben.",
+      "colorPalette": "Folge der Farbpalette",
+      "shoesReminder": "Vergiss nicht, Turnschuhe oder Ersatzschuhe mitzubringen, um die ganze Nacht durchzutanzen!",
+      "gifts": "Briefumschlagdusche",
+      "giftsDescription": "Heute beginnen wir die wichtigste Reise unseres Lebens: unser Zuhause, unsere Träume, unsere Geschichte aufzubauen. Wenn du uns auch in diesem Anfang begleiten möchtest, wäre eine Briefumschlagdusche eine Geste, die wir für immer in unseren Herzen tragen. Danke, dass du Teil dessen bist, was wir heute säen, um morgen zu ernten."
+    }
   },
   "QA": {
-    "title": "Preguntas y Respuestas"
+    "title": "Fragen und Antworten",
+    "Accordion": {
+      "01": {
+        "question": "Wann und wo ist die Hochzeit?",
+        "answer": "Das Datum ist der 9. August 2025 im Bitecca e Vino in Bogotá. An diesem Tag möchten wir ein Stück unserer Geschichte mit dir teilen – zwischen Toasts, Umarmungen und viel Freude. Wir freuen uns sehr, dass du dabei bist!"
+      },
+      "02": {
+        "question": "Gibt es einen Dresscode?",
+        "answer": "Ja, und wir möchten, dass du dich durch Farben und Stil als Teil der Feier fühlst. Für Männer: Anzug mit Krawatte, bitte vermeide Grün, Weiß oder ähnliche Farben sowie Westen. Für Frauen: langes, Cocktail- oder Midikleid, bitte vermeide Weiß oder ähnliche Farben und folge der Farbpalette im Abschnitt 'Über die Feier'."
+      },
+      "03": {
+        "question": "Gibt es ein vegetarisches Menü?",
+        "answer": "Ja, natürlich. Wir möchten, dass jeder sorgenfrei genießen kann. Bitte gib uns einfach bei der Bestätigung deiner Teilnahme Bescheid, und wir kümmern uns mit der gleichen Liebe und Sorgfalt darum wie beim Rest des Menüs."
+      },
+      "04": {
+        "question": "Kann ich jemanden mitbringen?",
+        "answer": "Wir würden gerne alle willkommen heißen, aber aus Platz- und Logistikgründen ist die Einladung nur für dich. Deine Anwesenheit allein bedeutet uns die Welt."
+      },
+      "05": {
+        "question": "Gibt es Parkmöglichkeiten?",
+        "answer": "Ja, hier sind die Informationen zum nächstgelegenen öffentlichen Parkplatz: Carrera 13A #28-38, im Parque Central Bavaria. Einfahrt bis 19:00 Uhr. Der Tarif beträgt 18.000 COP für Autos und 12.000 COP für Motorräder. Nur Barzahlung. Wir möchten, dass du von Anfang an stressfrei genießen kannst (Standort ansehen: https://goo.gl/maps/kmfoVjKkqkWV7KNW8)."
+      },
+      "06": {
+        "question": "Wann beginnt die Zeremonie und wie lange dauert sie?",
+        "answer": "Die symbolische Zeremonie beginnt um 17:30 Uhr und dauert etwa 30 Minuten. Es wird ein intimer und bedeutungsvoller Moment für uns sein, und wir freuen uns, wenn du von Anfang an dabei bist."
+      },
+      "07": {
+        "question": "Wann sollte ich ankommen?",
+        "answer": "Idealerweise zwischen 17:00 und 17:30 Uhr, damit du dich in Ruhe hinsetzen kannst und die Zeremonie pünktlich beginnt. Alles beginnt rechtzeitig – und wir wollen dich beim allerersten 'Ja' dabeihaben."
+      },
+      "08": {
+        "question": "Bis wann muss ich zusagen?",
+        "answer": "Der Termin zur Bestätigung ist der 1. Juni, aber wenn du früher Bescheid gibst, hilft uns das sehr. Jeder Aspekt dieses Tages wird mit Liebe vorbereitet – und zu wissen, dass du kommst, lässt uns alles mit noch mehr Vorfreude gestalten."
+      },
+      "09": {
+        "question": "Darf ich während der Zeremonie Fotos machen?",
+        "answer": "Wir möchten, dass du diesen Moment mit uns erlebst, die Details festhältst, die kein Foto zeigen kann – das Lachen, die Emotionen. Deshalb bitten wir dich um deine volle Präsenz: Die Handys können warten – dieser Moment nicht."
+      },
+      "10": {
+        "question": "Wird es Live-Musik geben?",
+        "answer": "Ja – und nicht irgendeine Musik: Der Solist José wird dabei sein und die Atmosphäre mitgestalten, die wir mit euch teilen wollen. Musik wird ein Teil der Seele dieser Feier sein."
+      }
+    }
+  },
+  "Footer": {
+    "title": "C&JP",
+    "copyright": "© 2025 Camila & Juan Pablo",
+    "navigation": "Navigation",
+    "linksTitle": "Links",
+    "Confirm": "RSVP"
   }
 }

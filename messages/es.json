@@ -30,16 +30,16 @@
   "Story": {
     "title": "Nuestra Historia",
     "Timeline": {
-      "2016": "Contenido del año 2016...",
-      "2017": "Contenido del año 2017...",
-      "2018": "Contenido del año 2018...",
-      "2019": "Contenido del año 2019...",
-      "2020": "Contenido del año 2020...",
-      "2021": "Contenido del año 2021...",
-      "2022": "Contenido del año 2022...",
-      "2023": "Contenido del año 2023...",
-      "2024": "Contenido del año 2024...",
-      "2025": "Contenido del año 2025..."
+      "2016": "Y cuando te me acercas se acelera mi motor. Me da fiebere, me hago fuego y me vuelvo a consummir... - Zoé",
+      "2017": "Andábamos sin buscarnos, pero sabiendo que andábamos para encontrarnos. - Julio Cortázar ",
+      "2018": "Estar donde puedo ser  ",
+      "2019": "Te amo sin saber cómo, ni cuándo, ni de dónde.<br></br>Te amo directamente sin problemas ni orgullo:<br></br>así te amo porque no sé amar de otra manera.<br></br>- Pablo Neruda ",
+      "2020": "Y llegamos justo a tiempo; para coincidir y enamorarnos; para construir un amor invencible; para abrazarnos el alma en las tormentas; para ser cómplices en nuestros sueños; para que seamos el uno para el otro, porque nuestros corazones están destinados a conectar y permanecer toda la vida - Anónimo",
+      "2021": "¿En qué abrazo nos hicimos eternos?¿En qué beso decidimos no soltarnos jamás? ",
+      "2022": "Amo tus ojos.<br></br>Amo el miestrioso café que ellos visten.<br></br>Amo el silencio que ellos presumen.<br></br>Amo la paz que se refleja<br></br>en los míos<br></br>siendo tuyos.<br></br>Te amo.<br></br>- Marc Cortez ",
+      "2023": "Cuando te das cuenta de que quieres pasar el resto de tu vida con alguien, quieres que el resto de tu vida empiece lo antes posible - When Harry Met ally",
+      "2024": "Sé que te amaba antes de saberlo. Como si mi alma no necesitara conocerte para ponerle al amor tu nombre... - Lucas Hugo Guerra",
+      "2025": "Después de ti ya no soy lo que era,<br></br>me veo diferente por dentro y por fuera.<br></br>Si me encontraran por la carretera<br></br>seguro que nadie me reconociera. <br></br>Después de ti ya no estoy tan perdido<br></br>ya no me siento solo cuando estoy conmigo.<br></br>Me gustas mucho<br></br>y me gusto mucho más<br></br>desde que estoy contigo. - Camilo"
     }
   },
   "Gallery": {
@@ -83,7 +83,9 @@
       "women": "Mujeres",
       "womenDescription": "Vestido largo, cóctel o midi. Se reserva el color blanco o similares.",
       "colorPalette": "Sigue la paleta de colores",
-      "shoesReminder": "¡No olvides traer tenis o zapatos de cambio para poder bailar toda la noche!"
+      "shoesReminder": "¡No olvides traer tenis o zapatos de cambio para poder bailar toda la noche!",
+      "gifts": "Lluvia de sobres",
+      "giftsDescription": "Hoy empezamos el viaje más importante de nuestras vidas: construir nuestro hogar, nuestros sueños, nuestra historia. Si quieren acompañarnos también en ese comienzo, una lluvia de sobres será un gesto que llevaremos siempre en el corazón. Gracias por ser parte de lo que estamos sembrando hoy, para cosechar mañana."
     }
   },
   "QA": {

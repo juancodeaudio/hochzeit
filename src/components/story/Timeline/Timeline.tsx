@@ -214,7 +214,9 @@ export const Timeline = () => {
                 animate={{ y: 0 }}
                 transition={{ delay: 0.2 }}
               >
-                {t(year.toString())}
+                {t.rich(year.toString(), {
+                  br: () => <br />
+                })}
               </motion.div>
             </motion.div>
           </motion.div>
