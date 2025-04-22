@@ -36,6 +36,16 @@ export const DressCode = () => {
         <h3>{t('colorPalette')}</h3>
         <p>{t('shoesReminder')}</p>
       </div>
+      <div className={styles["DressCode__gifts"]}>
+        <Image
+          src="/icons/gift.png"
+          alt="Dress Code"
+          width={250}
+          height={200}
+        />
+        <h3>{t('gifts')}</h3>
+        <p>{t('giftsDescription')}</p>
+      </div>
     </section>
   );
 }

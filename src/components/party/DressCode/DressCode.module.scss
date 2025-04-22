@@ -9,7 +9,8 @@
   grid-template-areas:
     "top    top    top"
     "men    images women"
-    "bottom bottom bottom";
+    "bottom bottom bottom"
+    "gifts  gifts  gifts";
   padding-bottom: 4rem;
   
   h3 {
@@ -36,7 +37,8 @@
       "men"
       "images"
       "women"
-      "bottom";
+      "bottom"
+      "gifts";
   }
 
   h2 {
@@ -98,6 +100,20 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
 
+  &__gifts {
+    grid-area: gifts;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img {
+      border: none;
+      box-shadow: none;
+    }
   }
 }
