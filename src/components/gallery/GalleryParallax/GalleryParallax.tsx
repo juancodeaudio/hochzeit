@@ -3,7 +3,7 @@
 import styles from "./GalleryParallax.module.scss";
 
 import Image from 'next/image';
-import { useRef, useCallback, useMemo } from "react";
+import { useRef, useCallback, useMemo, useEffect, useState } from "react";
 import { motion, useMotionValue, useSpring, useTransform, useScroll } from 'motion/react';
 import { useTranslations } from 'next-intl';
 import { GalleryImage } from "app/constants/types";
@@ -103,22 +103,40 @@ const ParallaxImg = ({ className, alt, src, width, start, end, rotation }: Paral
   const rotationValue = rotation ?? 0;
   const isMainImage = start <= 0 && end >= 0;
 
+  const [windowWidth, setWindowWidth] = useState<number | null>(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    handleResize(); // Set initial value
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const responsiveWidth = windowWidth !== null && windowWidth < 768 ? width * 0.5 : width;
+
+  const scrollYTransform = useTransform(scrollYProgress, [0, 1], [start, end]);
+  const opacityTransform = useTransform(scrollYProgress, [0.75, 1], [1, 0]);
+  const yTransform = windowWidth !== null && windowWidth < 768 ? 0 : scrollYTransform;
+
   return (
     <motion.div
       ref={ref}
       className={className}
       style={{
-        opacity: useTransform(scrollYProgress, [0.75, 1], [1, 0]),
-        y: useTransform(scrollYProgress, [0, 1], [start, end]),
+        opacity: opacityTransform,
+        y: yTransform,
         rotate: rotationValue
       }}
     >
       <Image
         src={src}
         alt={alt}
-        width={width}
+        width={responsiveWidth}
         height={100}
-        style={{ width, height: 'auto' }}
+        style={{ width: responsiveWidth, height: 'auto' }}
         priority={isMainImage}
         sizes="(max-width: 768px) 100vw, 50vw"
       />
