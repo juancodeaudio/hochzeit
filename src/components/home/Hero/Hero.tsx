@@ -31,7 +31,7 @@ export const Hero = () => {
   return (
     <section className={styles["Hero"]} ref={container}>
       <div className={styles["Hero__img-container"]} style={{ transform: `translateY(${offsetY * 0.3}px)` }}>
-        <Image src="/images/IMG_1704.jpeg" fill alt="image" />
+        <Image src="/images/IMG_1704.webp" fill alt="image" />
       </div>
       <h1 className={styles["Hero__title"]}>{t('title')}</h1>
       <h3>{t('welcome')}</h3>
