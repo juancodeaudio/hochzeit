@@ -16,6 +16,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      will-change: transform;
 
       .gallery-scroll__image-wrapper {
         position: relative;

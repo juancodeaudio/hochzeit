@@ -3,15 +3,28 @@
   width: 100%;
   position: relative;
   z-index: 1;
+
+  @include for-size(phone) {
+    height: 130svh;
+  }
   .gallery-parallax__title {
     position: absolute;
     left: 50%;
     top: 35%;
     transform: translateX(-50%) translateY(-50%);
     @include font-size(20);
+
+    @include for-size(phone) {
+      left: 30%;
+      top: 42%
+    }
     h2 {
       margin: 0px;
       text-align: center;
+
+      @include for-size(phone) {
+        text-align: left;
+      }
     }
   }
   .gallery-parallax__plane {
@@ -28,44 +41,87 @@
     &:nth-of-type(1) {
       .gallery-parallax__image-container {
         &:nth-of-type(1) {
+          //top left
           left: 5vw;
           top: 5vh;
         }
         &:nth-of-type(2) {
+          //top middle
           left: 35vw;
           top: 0;
+
+          @include for-size(phone) {
+            left: 45vw;
+            top: 10svh;
+          }
         }
         &:nth-of-type(3) {
+          //bottom right
           left: 65vw;
-          top: 80vh;
+          top: 80svh;
+
+          @include for-size(phone) {
+            left: 55vw;
+            top: 75svh;
+          }
         }
       }
     }
     &:nth-of-type(2) {
       .gallery-parallax__image-container {
         &:nth-of-type(1) {
+          //last
           left: 10vw;
           top: 120vh;
+
+          @include for-size(phone) {
+            left: 40vw;
+            top: 110svh;
+          }
         }
         &:nth-of-type(2) {
+          //middle right
           left: 70vw;
           top: 45vh;
+
+          @include for-size(phone) {
+            left: 60vw;
+            top: 50svh;
+          }
         }
         &:nth-of-type(3) {
+          //bottom middle
           left: 40vw;
           top: 70vh;
+
+          @include for-size(phone) {
+            left: 10vw;
+            top: 60svh;
+          }
         }
       }
     }
     &:nth-of-type(3) {
       .gallery-parallax__image-container {
         &:nth-of-type(1) {
+          //top right
           left: 65vw;
           top: 15vh;
+
+          @include for-size(phone) {
+            left: 60vw;
+            top: 35svh;
+          }
         }
         &:nth-of-type(2) {
+          //bottom left
           left: 10vw;
           top: 75vh;
+
+          @include for-size(phone) {
+            left: 10vw;
+            top: 90svh;
+          }
         }
       }
     }
