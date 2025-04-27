@@ -5,7 +5,7 @@
   z-index: 1;
 
   @include for-size(phone) {
-    height: 130svh;
+    height: 140svh;
   }
   .gallery-parallax__title {
     position: absolute;
@@ -76,7 +76,7 @@
 
           @include for-size(phone) {
             left: 40vw;
-            top: 110svh;
+            top: 120svh;
           }
         }
         &:nth-of-type(2) {
@@ -96,7 +96,7 @@
 
           @include for-size(phone) {
             left: 10vw;
-            top: 60svh;
+            top: 70svh;
           }
         }
       }
@@ -120,7 +120,7 @@
 
           @include for-size(phone) {
             left: 10vw;
-            top: 90svh;
+            top: 95svh;
           }
         }
       }

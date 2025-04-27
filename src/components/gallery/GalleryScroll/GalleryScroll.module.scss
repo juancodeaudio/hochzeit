@@ -2,6 +2,10 @@
   height: 300vh;
   position: relative;
 
+  @include for-size(phone) {
+    display: none;
+  }
+
   .gallery-scroll__viewport {
     position: sticky;
     overflow: hidden;
